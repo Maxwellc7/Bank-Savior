@@ -7,4 +7,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="login-image.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="login-image.png" />
+  </ItemGroup>
+
 </Project>

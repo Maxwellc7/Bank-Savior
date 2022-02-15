@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bank_Savior"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Login Bank Savior" Height="450" Width="800" Background="Transparent">
+
+    <Grid Margin="262,0,262,0" Background="#525558">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type TextBox}">
+                    <Setter Property="Margin" Value="0,10,0,0"/>
+                </Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Margin" Value="0,10,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <Image Height="152" Width="209" Source="/login-image.png">
+                <Image.OpacityMask>
+                    <ImageBrush ImageSource="/login-image.png" TileMode="None"/>
+                </Image.OpacityMask>
+            </Image>
+            <Label Foreground="#eee" Opacity="0.9" Content="Username&#xD;&#xA;" HorizontalAlignment="Center" Height="27"/>
+
+            <TextBox Foreground="#eee" Opacity="0.5" TextWrapping="Wrap" Width="120" VerticalAlignment="Stretch" Background="Transparent" BorderBrush="#eee" BorderThickness="0 0 0 1" TextChanged="TextBox_TextChanged"/>
+            <Label Foreground="#eee" Opacity="0.9" Content="Password&#xD;&#xA;" HorizontalAlignment="Center" Height="27" Margin="0,16,0,0"/>
+            <TextBox Foreground="#eee" Opacity="0.5" TextWrapping="Wrap" Width="120" Margin="0,10,0,30" Background="Transparent" BorderBrush="#eee" BorderThickness="0 0 0 1" TextChanged="TextBox_TextChanged"/>
+            <Button Content="Login" Background="Transparent" BorderBrush="#eee" Opacity="0.9" Foreground="#eee" Height="30" Width="163" Cursor="Hand" />
+            
+        </StackPanel>
 
     </Grid>
+    
 </Window>
