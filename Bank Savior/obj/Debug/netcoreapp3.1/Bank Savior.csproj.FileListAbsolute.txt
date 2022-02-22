@@ -18,3 +18,23 @@ C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\Bank Savio
 C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.dll
 C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.pdb
 C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.genruntimeconfig.cache
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.exe
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.deps.json
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.runtimeconfig.json
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.runtimeconfig.dev.json
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.dll
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.pdb
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.csproj.AssemblyReference.cache
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior_MarkupCompile.cache
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior_MarkupCompile.lref
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.g.resources
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.AssemblyInfoInputs.cache
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.AssemblyInfo.cs
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.csproj.CoreCompileInputs.cache
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.dll
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.pdb
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.genruntimeconfig.cache
