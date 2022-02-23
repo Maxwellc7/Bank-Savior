@@ -62,5 +62,14 @@ namespace Bank_Savior
 
             VentanaPuntoEquilibrio.Show();
         }
+
+        private void BtnCerrarSesion_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+
+            MainWindow VentanaLogin = new MainWindow();
+
+            VentanaLogin.Show();
+        }
     }
 }

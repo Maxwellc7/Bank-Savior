@@ -5,19 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bank_Savior"
         mc:Ignorable="d"
-        Title="GUIMenu" Height="450" Width="800" Background="Transparent">
+        Title="GUIMenu" Height="450" Width="800" Background="Transparent" MinWidth="800" MinHeight="450" MaxWidth="800" MaxHeight="450" WindowStartupLocation="CenterScreen">
     <Grid Background="#FF191717">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="169*"/>
+            <ColumnDefinition Width="631*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
-        <Image x:Name="imgLogo" Margin="359,24,41,7" Source="/Logo.png" Stretch="Fill"/>
         <Label Content="" HorizontalAlignment="Left" Margin="75,35,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="40" Height="56" Width="10"/>
-        <Label Content="Menu" HorizontalAlignment="Left" Margin="66,14,0,0" VerticalAlignment="Top" Foreground="#FFF85C42" FontFamily="Shrikhand" FontSize="70" Height="112" Width="220"/>
+        <Label Content="Menu" HorizontalAlignment="Left" Margin="66,14,0,0" VerticalAlignment="Top" Foreground="#FFF85C42" FontFamily="Shrikhand" FontSize="70" Height="112" Width="220" Grid.ColumnSpan="2"/>
         <Grid HorizontalAlignment="Left" Height="249" Margin="75,126,0,0" VerticalAlignment="Top" Width="0"/>
-        <Button x:Name="btnInteresCompuesto" Content="Interes Compuesto" HorizontalAlignment="Left" Margin="75,131,0,0" VerticalAlignment="Top" Height="44" Width="211" Click="btnInteresCompuesto_Click"/>
-        <Button x:Name="btnPrestamo" Content="Prestamo" HorizontalAlignment="Left" Margin="75,190,0,0" VerticalAlignment="Top" Height="44" Width="211" Click="btnPrestamo_Click"/>
-        <Button x:Name="btnVAR_TIR" Content="VAR / TIR" HorizontalAlignment="Left" Margin="75,250,0,0" VerticalAlignment="Top" Height="44" Width="211" Click="btnVAR_TIR_Click"/>
-        <Button x:Name="btnPuntoEquilibrio" Content="Punto de Equilibrio" HorizontalAlignment="Left" Margin="75,312,0,0" VerticalAlignment="Top" Height="44" Width="211" Click="btnPuntoEquilibrio_Click"/>
+        <Button x:Name="btnInteresCompuesto" Content="Interes Compuesto" HorizontalAlignment="Left" Margin="75,131,0,0" VerticalAlignment="Top" Height="44" Width="211" Click="btnInteresCompuesto_Click" Background="Transparent" BorderBrush="#eee" Opacity="0.9" Foreground="#eee" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnPrestamo" Content="Prestamo" HorizontalAlignment="Left" Margin="75,190,0,0" VerticalAlignment="Top" Height="44" Width="211" Click="btnPrestamo_Click" Background="Transparent" BorderBrush="#eee" Opacity="0.9" Foreground="#eee" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnVAR_TIR" Content="VAR / TIR" HorizontalAlignment="Left" Margin="75,250,0,0" VerticalAlignment="Top" Height="44" Width="211" Click="btnVAR_TIR_Click" Background="Transparent" BorderBrush="#eee" Opacity="0.9" Foreground="#eee" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnPuntoEquilibrio" Content="Punto de Equilibrio" HorizontalAlignment="Left" Margin="75,312,0,0" VerticalAlignment="Top" Height="44" Width="211" Click="btnPuntoEquilibrio_Click" Background="Transparent" BorderBrush="#eee" Opacity="0.9" Foreground="#eee" Grid.ColumnSpan="2"/>
+        <Button x:Name="BtnCerrarSesion" Content="Cerrar sesión" HorizontalAlignment="Left" Margin="425,357,0,0" VerticalAlignment="Top" Width="117" Height="26" Click="BtnCerrarSesion_Click" Background="Transparent" BorderBrush="#eee" Opacity="0.9" Foreground="#eee" Grid.Column="1"/>
+        <Image Margin="187,109,89,90" Stretch="Uniform" Source="/login-image.png" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="116" Margin="395,222,0,0" VerticalAlignment="Top" Width="108" Source="/planta.png" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="72" Margin="273,159,0,0" VerticalAlignment="Top" Width="71" Source="/estadisticas.png" Grid.Column="1"/>
     </Grid>
 </Window>

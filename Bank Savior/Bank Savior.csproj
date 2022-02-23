@@ -8,11 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="204-2041202_punto-de-equilibrio-animado-modified.png" />
+    <None Remove="estadisticas.png" />
+    <None Remove="icompuesto.png" />
+    <None Remove="Icono-punto-equilibrio-modified.png" />
     <None Remove="login-image.png" />
+    <None Remove="Logo.png" />
+    <None Remove="planta.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="204-2041202_punto-de-equilibrio-animado-modified.png" />
+    <Resource Include="estadisticas.png" />
+    <Resource Include="icompuesto.png" />
+    <Resource Include="Icono-punto-equilibrio-modified.png" />
     <Resource Include="login-image.png" />
+    <Resource Include="Logo.png" />
+    <Resource Include="planta.png" />
   </ItemGroup>
 
 </Project>

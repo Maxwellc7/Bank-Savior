@@ -5,9 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bank_Savior"
         mc:Ignorable="d"
-        Title="GUI_PuntoEquilibrio" Height="450" Width="800">
+        Title="GUI_PuntoEquilibrio" Height="485" Width="800" Background="#FF191717" MinWidth="800" MinHeight="485" MaxWidth="800" MaxHeight="485" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="btnMenuPrincipal" Content="Menú Principal" HorizontalAlignment="Left" Margin="650,370,0,0" VerticalAlignment="Top" Height="38" Width="109" Click="btnMenuPrincipal_Click"/>
+        <Button x:Name="btnMenuPrincipal" Content="Menú Principal" HorizontalAlignment="Left" Margin="650,370,0,0" VerticalAlignment="Top" Height="38" Width="109" Click="btnMenuPrincipal_Click" Background="Transparent" BorderBrush="#eee" Opacity="0.9" Foreground="#eee"/>
+        <Label x:Name="lblPuntoEquilibrio" Content="Punto de Equilibrio&#xD;&#xA;" HorizontalAlignment="Left" Margin="66,14,0,0" VerticalAlignment="Top" Foreground="#FFF85C42" FontFamily="Shrikhand" FontSize="40" Height="58" Width="425"/>
+        <Label x:Name="lblCostosFijos" Content="Costos Fijos&#xD;&#xA;" HorizontalAlignment="Left" Margin="66,125,0,0" VerticalAlignment="Top" Width="86" Foreground="White"/>
+        <Label x:Name="lblCostoVariable" Content="Costos Variables&#xD;&#xA;" HorizontalAlignment="Left" Margin="66,170,0,0" VerticalAlignment="Top" Width="154" Foreground="White"/>
+        <Label x:Name="lblPrecioVenta" Content="Precio de Venta &#xD;&#xA;" HorizontalAlignment="Left" Margin="66,217,0,0" VerticalAlignment="Top" Width="140" Foreground="White" Height="30"/>
+        <TextBox x:Name="txtCostosFijos" HorizontalAlignment="Left" Margin="250,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCostosVariables" HorizontalAlignment="Left" Margin="250,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPrecioVenta" HorizontalAlignment="Left" Margin="250,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblResultado" Content="EL PEQ ES IGUAL A XXXXXX" HorizontalAlignment="Left" Margin="66,275,0,0" VerticalAlignment="Top" Width="299" Foreground="White" Height="43" FontSize="20"/>
+        <Button x:Name="btnCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="103,338,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold"/>
+        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="227,338,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="218" Margin="460,111,0,0" VerticalAlignment="Top" Width="244" Source="/icompuesto.png"/>
 
     </Grid>
 </Window>

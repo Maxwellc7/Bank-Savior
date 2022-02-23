@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bank_Savior"
         mc:Ignorable="d"
-        Title="Login Bank Savior" Height="552" Width="334" Background="Transparent">
+        Title="Login Bank Savior" Height="595" Width="384" Background="Transparent" RenderTransformOrigin="0.5,0.5" Visibility="Visible" MaxWidth="384" MaxHeight="595" MinWidth="384" HorizontalContentAlignment="Center" MinHeight="595" VerticalContentAlignment="Center" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
         <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
@@ -35,31 +35,24 @@
     </Window.Resources>
 
     <Grid x:Name="backGround">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="166*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Grid.Background>
             <SolidColorBrush Color="{DynamicResource SolidColorBrushColor2}"/>
         </Grid.Background>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="226" >
-            <StackPanel.Resources>
-                <Style TargetType="{x:Type TextBox}">
-                    <Setter Property="Margin" Value="0,10,0,0"/>
-                </Style>
-                <Style TargetType="{x:Type Button}">
-                    <Setter Property="Margin" Value="0,10,0,0"/>
-                </Style>
-            </StackPanel.Resources>
-            <Image x:Name="imgLogin" Height="152" Width="209" Source="/login-image.png">
-                <Image.OpacityMask>
-                    <ImageBrush ImageSource="/login-image.png" TileMode="None"/>
-                </Image.OpacityMask>
-            </Image>
+        <Canvas HorizontalAlignment="Center" Margin="0,69,0,69" Width="220">
+            <Label x:Name="lblUsername" Foreground="#eee" Opacity="0.9" Content="Username&#xA;" Height="37" Canvas.Left="47" Canvas.Top="203" FontSize="20" Width="123" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="txtUsername" Foreground="#eee" Opacity="0.5" TextWrapping="Wrap" Background="Transparent" BorderBrush="#eee" BorderThickness="0 0 0 1" TextChanged="TextBox_TextChanged" Height="28" Canvas.Left="47" Canvas.Top="240" Width="120" FontSize="20" TextAlignment="Center" FontWeight="Normal"/>
+            <Label x:Name="lblpassword" Foreground="#eee" Opacity="0.9" Content="Password&#xA;" Height="32" Canvas.Left="47" Canvas.Top="273" FontSize="20" HorizontalContentAlignment="Center" Width="123"/>
+            <TextBox x:Name="txtPassword" Foreground="#eee" Opacity="0.5"  TextWrapping="Wrap" Background="Transparent" BorderBrush="#eee" BorderThickness="0 0 0 1" TextChanged="TextBox_TextChanged" Height="29" Canvas.Left="47" Canvas.Top="310" Width="120" TextAlignment="Center" FontSize="20"/>
+            <Button x:Name="btnLogin" Template="{DynamicResource LoginButton}" Content="Login" Background="Transparent" BorderBrush="#eee" Opacity="0.9" Foreground="#eee" Cursor="Hand" Click="btnLogin_Click" Height="37" Canvas.Left="26" Canvas.Top="385" Width="162" FontSize="20" />
 
-            <Label x:Name="lblUsername" Foreground="#eee" Opacity="0.9" Content="Username&#xD;&#xA;" HorizontalAlignment="Center" Height="27"/>
-            <TextBox x:Name="txtUsername" Foreground="#eee" Opacity="0.5" TextWrapping="Wrap" Width="120" VerticalAlignment="Stretch" Background="Transparent" BorderBrush="#eee" BorderThickness="0 0 0 1" TextChanged="TextBox_TextChanged"/>
-            <Label x:Name="lblpassword" Foreground="#eee" Opacity="0.9" Content="Password&#xD;&#xA;" HorizontalAlignment="Center" Height="27" Margin="0,16,0,0"/>
-            <TextBox x:Name="txtPassword" Foreground="#eee" Opacity="0.5"  TextWrapping="Wrap" Width="120" Margin="0,10,0,30" Background="Transparent" BorderBrush="#eee" BorderThickness="0 0 0 1" TextChanged="TextBox_TextChanged"/>
-            <Button x:Name="btnLogin" Template="{DynamicResource LoginButton}" Content="Login" Background="Transparent" BorderBrush="#eee" Opacity="0.9" Foreground="#eee" Height="30" Width="163" Cursor="Hand" Click="btnLogin_Click" />
+            <Image Height="100" Width="100" Canvas.Left="57" Canvas.Top="120"/>
+            <Image x:Name="imgLogo" Width="268" Height="264" Source="/Logo.png" Canvas.Top="-42" Canvas.Left="-24"/>
 
-        </StackPanel>
+        </Canvas>
 
     </Grid>
 

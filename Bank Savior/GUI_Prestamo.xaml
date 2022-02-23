@@ -5,9 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bank_Savior"
         mc:Ignorable="d"
-        Title="GUI_Prestamo" Height="450" Width="800">
+        Title="GUI_Prestamo" Height="485" Width="800" Background="#FF191717" MinWidth="800" MinHeight="485" MaxWidth="800" MaxHeight="485" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="btnMenuPrincipal" Content="Menú Principal" HorizontalAlignment="Left" Margin="650,370,0,0" VerticalAlignment="Top" Height="38" Width="109" Click="btnMenuPrincipal_Click"/>
+        <Button x:Name="btnMenuPrincipal" Content="Menú Principal" HorizontalAlignment="Left" Margin="650,370,0,0" VerticalAlignment="Top" Height="38" Width="109" Click="btnMenuPrincipal_Click" Background="Transparent" BorderBrush="#eee" Opacity="0.9" Foreground="#eee"/>
+        <Label x:Name="lblPrestamos" Content="Préstamos" HorizontalAlignment="Left" Margin="66,14,0,0" VerticalAlignment="Top" Foreground="#FFF85C42" FontFamily="Shrikhand" FontSize="40" Height="58" Width="412"/>
+        <Label x:Name="lblCapital" Content="Capital " HorizontalAlignment="Left" Margin="66,103,0,0" VerticalAlignment="Top" Width="86" Foreground="White"/>
+        <Label x:Name="lblDuracionPrestamo" Content="Duracion del préstamo" HorizontalAlignment="Left" Margin="66,148,0,0" VerticalAlignment="Top" Width="132" Foreground="White"/>
+        <Label x:Name="lblInteresAnual" Content="Interés anual" HorizontalAlignment="Left" Margin="66,195,0,0" VerticalAlignment="Top" Width="100" Foreground="White"/>
+        <TextBox x:Name="txtCapitalInicial" HorizontalAlignment="Left" Margin="250,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtTiempoAños" HorizontalAlignment="Left" Margin="250,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtTasaInteres" HorizontalAlignment="Left" Margin="250,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblResultadoNumeroCoutas" Content="Numero de Cuotas: XXX&#xD;&#xA; $XXXXXX" HorizontalAlignment="Left" Margin="71,243,0,0" VerticalAlignment="Top" Width="299" Foreground="White" Height="43" FontSize="20"/>
+        <Image HorizontalAlignment="Left" Height="218" Margin="460,111,0,0" VerticalAlignment="Top" Width="244" Source="/icompuesto.png"/>
+        <Button x:Name="btnCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="96,369,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold"/>
+        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="220,369,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold"/>
+        <Label x:Name="lblResultadoCoutaMensual" Content="Couta Mensual: XXX" HorizontalAlignment="Left" Margin="71,278,0,0" VerticalAlignment="Top" Width="299" Foreground="White" Height="43" FontSize="20"/>
+        <Label x:Name="lblResultadoInteresyTotal" Content="Interes:  XXX Total: XXXX" HorizontalAlignment="Left" Margin="71,313,0,0" VerticalAlignment="Top" Width="299" Foreground="White" Height="43" FontSize="20"/>
 
     </Grid>
 </Window>
