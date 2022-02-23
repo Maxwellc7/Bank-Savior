@@ -1,0 +1,23 @@
+﻿<Window x:Class="Bank_Savior.GUIMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bank_Savior"
+        mc:Ignorable="d"
+        Title="GUIMenu" Height="450" Width="800" Background="Transparent">
+    <Grid Background="#FF191717">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="imgLogo" Margin="359,24,41,7" Source="/Logo.png" Stretch="Fill"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="75,35,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="40" Height="56" Width="10"/>
+        <Label Content="Menu" HorizontalAlignment="Left" Margin="66,14,0,0" VerticalAlignment="Top" Foreground="#FFF85C42" FontFamily="Shrikhand" FontSize="70" Height="112" Width="220"/>
+        <Grid HorizontalAlignment="Left" Height="249" Margin="75,126,0,0" VerticalAlignment="Top" Width="0"/>
+        <Button x:Name="btnInteresCompuesto" Content="Interes Compuesto" HorizontalAlignment="Left" Margin="75,131,0,0" VerticalAlignment="Top" Height="44" Width="211" Click="btnInteresCompuesto_Click"/>
+        <Button x:Name="btnPrestamo" Content="Prestamo" HorizontalAlignment="Left" Margin="75,190,0,0" VerticalAlignment="Top" Height="44" Width="211" Click="btnPrestamo_Click"/>
+        <Button x:Name="btnVAR_TIR" Content="VAR / TIR" HorizontalAlignment="Left" Margin="75,250,0,0" VerticalAlignment="Top" Height="44" Width="211" Click="btnVAR_TIR_Click"/>
+        <Button x:Name="btnPuntoEquilibrio" Content="Punto de Equilibrio" HorizontalAlignment="Left" Margin="75,312,0,0" VerticalAlignment="Top" Height="44" Width="211" Click="btnPuntoEquilibrio_Click"/>
+    </Grid>
+</Window>

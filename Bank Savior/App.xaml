@@ -5,5 +5,7 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
+        <Color x:Key="SolidColorBrushColor1">#FF191717</Color>
+        <Color x:Key="SolidColorBrushColor2">#FF191717</Color>
     </Application.Resources>
 </Application>

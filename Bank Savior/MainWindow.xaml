@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bank_Savior"
         mc:Ignorable="d"
-        Title="Login Bank Savior" Height="450" Width="800" Background="Transparent">
+        Title="Login Bank Savior" Height="552" Width="334" Background="Transparent">
     <Window.Resources>
         <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
         <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
@@ -34,8 +34,11 @@
         </ControlTemplate>
     </Window.Resources>
 
-    <Grid Margin="262,0,262,0" Background="#525558">
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
+    <Grid x:Name="backGround">
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource SolidColorBrushColor2}"/>
+        </Grid.Background>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="226" >
             <StackPanel.Resources>
                 <Style TargetType="{x:Type TextBox}">
                     <Setter Property="Margin" Value="0,10,0,0"/>
@@ -44,20 +47,20 @@
                     <Setter Property="Margin" Value="0,10,0,0"/>
                 </Style>
             </StackPanel.Resources>
-            <Image Height="152" Width="209" Source="/login-image.png">
+            <Image x:Name="imgLogin" Height="152" Width="209" Source="/login-image.png">
                 <Image.OpacityMask>
                     <ImageBrush ImageSource="/login-image.png" TileMode="None"/>
                 </Image.OpacityMask>
             </Image>
-            
-            <Label x:Name="usernamelbl" Foreground="#eee" Opacity="0.9" Content="Username&#xD;&#xA;" HorizontalAlignment="Center" Height="27"/>
-            <TextBox x:Name="usernametxt" Foreground="#eee" Opacity="0.5" TextWrapping="Wrap" Width="120" VerticalAlignment="Stretch" Background="Transparent" BorderBrush="#eee" BorderThickness="0 0 0 1" TextChanged="TextBox_TextChanged"/>
-            <Label x:Name="passwordlbl" Foreground="#eee" Opacity="0.9" Content="Password&#xD;&#xA;" HorizontalAlignment="Center" Height="27" Margin="0,16,0,0"/>
-            <TextBox x:Name="passwordtxt" Foreground="#eee" Opacity="0.5"  TextWrapping="Wrap" Width="120" Margin="0,10,0,30" Background="Transparent" BorderBrush="#eee" BorderThickness="0 0 0 1" TextChanged="TextBox_TextChanged"/>
-            <Button Template="{DynamicResource LoginButton}" Content="Login" Background="Transparent" BorderBrush="#eee" Opacity="0.9" Foreground="#eee" Height="30" Width="163" Cursor="Hand" />
+
+            <Label x:Name="lblUsername" Foreground="#eee" Opacity="0.9" Content="Username&#xD;&#xA;" HorizontalAlignment="Center" Height="27"/>
+            <TextBox x:Name="txtUsername" Foreground="#eee" Opacity="0.5" TextWrapping="Wrap" Width="120" VerticalAlignment="Stretch" Background="Transparent" BorderBrush="#eee" BorderThickness="0 0 0 1" TextChanged="TextBox_TextChanged"/>
+            <Label x:Name="lblpassword" Foreground="#eee" Opacity="0.9" Content="Password&#xD;&#xA;" HorizontalAlignment="Center" Height="27" Margin="0,16,0,0"/>
+            <TextBox x:Name="txtPassword" Foreground="#eee" Opacity="0.5"  TextWrapping="Wrap" Width="120" Margin="0,10,0,30" Background="Transparent" BorderBrush="#eee" BorderThickness="0 0 0 1" TextChanged="TextBox_TextChanged"/>
+            <Button x:Name="btnLogin" Template="{DynamicResource LoginButton}" Content="Login" Background="Transparent" BorderBrush="#eee" Opacity="0.9" Foreground="#eee" Height="30" Width="163" Cursor="Hand" Click="btnLogin_Click" />
 
         </StackPanel>
 
     </Grid>
-    
+
 </Window>

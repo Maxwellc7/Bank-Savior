@@ -25,8 +25,30 @@ namespace Bank_Savior
             InitializeComponent();
         }
 
+
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        
+        {
+            if(txtUsername.Text == "admin" && txtPassword.Text == "admin") { 
+            
+            this.Hide();
+
+            GUIMenu VentanaMenu = new GUIMenu();
+
+            VentanaMenu.Show();
+
+            }
+            else
+            {
+
+                MessageBox.Show("Error user or password incorrect");
+
+            }
 
         }
     }

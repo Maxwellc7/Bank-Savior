@@ -7,6 +7,38 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="GUIMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI_InteresCompuesto.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI_Prestamo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI_PuntoEquilibrio.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI_VarTir.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="GUIMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI_InteresCompuesto.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI_Prestamo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI_PuntoEquilibrio.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI_VarTir.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

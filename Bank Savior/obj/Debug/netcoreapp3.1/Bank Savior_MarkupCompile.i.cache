@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\App.xaml
-11407045341
+6-739169303
 
-5-741773374
+101156803921
 192-1573553407
-MainWindow.xaml;
+GUIMenu.xaml;GUI_InteresCompuesto.xaml;GUI_Prestamo.xaml;GUI_PuntoEquilibrio.xaml;GUI_VarTir.xaml;MainWindow.xaml;
 
-True
+False
 
