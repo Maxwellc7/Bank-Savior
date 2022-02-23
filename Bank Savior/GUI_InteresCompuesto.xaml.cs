@@ -20,6 +20,28 @@ namespace Bank_Savior
         public GUI_InteresCompuesto()
         {
             InitializeComponent();
+
+            cmbFrecuenciaCapitalizacion.Items.Add("Anualmente");
+            
+            cmbFrecuenciaCapitalizacion.Items.Add("Semestralmente");
+            
+            cmbFrecuenciaCapitalizacion.Items.Add("Trimestral");
+
+            cmbFrecuenciaCapitalizacion.Items.Add("Mensualmente");
+
+            cmbFrecuenciaCapitalizacion.Items.Add("Diariamente");
+
+        }
+
+        public void limpiarDatos()
+        {
+
+            txtCapitalInicial.Text = "";
+            txtTasaInteres.Text = "";
+            txtTiempoAños.Text = "";
+
+            cmbFrecuenciaCapitalizacion.Text = "";
+            lblResultado.Content = "En un X años tendrá $XXXXXX";
         }
 
         private void btnMenuPrincipal_Click(object sender, RoutedEventArgs e)
@@ -30,6 +52,13 @@ namespace Bank_Savior
             GUIMenu VentanaMenu = new GUIMenu();
 
             VentanaMenu.Show();
+
+        }
+
+        private void btnBorrar_Click(object sender, RoutedEventArgs e)
+        {
+
+            limpiarDatos();
 
         }
     }

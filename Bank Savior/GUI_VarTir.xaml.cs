@@ -20,6 +20,26 @@ namespace Bank_Savior
         public GUI_VarTir()
         {
             InitializeComponent();
+
+            cmbFlujoCaja.Items.Add("1");
+            cmbFlujoCaja.Items.Add("2");
+            cmbFlujoCaja.Items.Add("3");
+            cmbFlujoCaja.Items.Add("4");
+        
+        
+        }
+
+        public void limpiarDatos() {
+
+            txtInversionInicial.Text = "";
+            txtTasaInteres.Text = "";
+            txtaño1.Text = "";
+            txtaño2.Text = "";
+            txtaño3.Text = "";
+            txtaño4.Text = "";
+            cmbFlujoCaja.Text = "";
+            lblResultado.Content = "VAR: $XXX  TIR: XX%";
+
         }
 
         private void btnMenuPrincipal_Click(object sender, RoutedEventArgs e)
@@ -31,6 +51,11 @@ namespace Bank_Savior
             GUIMenu VentanaMenu = new GUIMenu();
 
             VentanaMenu.Show();
+        }
+
+        private void btnBorrar_Click(object sender, RoutedEventArgs e)
+        {
+            limpiarDatos();
         }
     }
 }

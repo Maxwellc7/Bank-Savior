@@ -24,6 +24,17 @@ namespace Bank_Savior
             InitializeComponent();
         }
 
+        public void limpiarDatos()
+        {
+            txtCostosFijos.Text = "";
+            txtCostosVariables.Text = "";
+            txtPrecioVenta.Text = "";
+
+            lblResultado.Content = "EL PEQ ES IGUAL A XXXXXX";
+
+
+        }
+
         private void btnMenuPrincipal_Click(object sender, RoutedEventArgs e)
         {
 
@@ -40,8 +51,11 @@ namespace Bank_Savior
         {
 
 
+        }
 
-
+        private void btnBorrar_Click(object sender, RoutedEventArgs e)
+        {
+            limpiarDatos();
         }
     }
 }

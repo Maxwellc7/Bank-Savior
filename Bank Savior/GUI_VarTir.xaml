@@ -18,15 +18,13 @@
         <Label x:Name="lblResultado" Content="VAR: $XXX  TIR: XX%" HorizontalAlignment="Left" Margin="115,321,0,0" VerticalAlignment="Top" Width="195" Foreground="White" Height="43" FontSize="20"/>
         <Image HorizontalAlignment="Left" Height="218" Margin="460,111,0,0" VerticalAlignment="Top" Width="244" Source="/icompuesto.png"/>
         <Button x:Name="btnCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="96,369,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold"/>
-        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="220,369,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold"/>
+        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="220,369,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold" Click="btnBorrar_Click"/>
         <Label x:Name="lblFlujoCaja" Content="FLUJO DE CAJA" HorizontalAlignment="Left" Margin="116,180,0,0" VerticalAlignment="Top" Width="100" Foreground="White" FontWeight="Bold"/>
         <TextBox x:Name="txtaño1" HorizontalAlignment="Left" Margin="127,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
-        <TextBox x:Name="txtTasaInteres_Copy1" HorizontalAlignment="Left" Margin="127,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
         <TextBox x:Name="txtaño2" HorizontalAlignment="Left" Margin="127,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
         <Label x:Name="lblIaño3" Content="Año 3:" HorizontalAlignment="Left" Margin="227,234,0,0" VerticalAlignment="Top" Width="50" Foreground="White"/>
         <Label x:Name="lblaño4" Content="Año 4:" HorizontalAlignment="Left" Margin="227,279,0,0" VerticalAlignment="Top" Width="50" Foreground="White"/>
         <TextBox x:Name="txtaño3" HorizontalAlignment="Left" Margin="299,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
-        <TextBox x:Name="txtTasaInteres_Copy4" HorizontalAlignment="Left" Margin="299,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
         <TextBox x:Name="txtaño4" HorizontalAlignment="Left" Margin="299,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
         <ComboBox x:Name="cmbFlujoCaja" HorizontalAlignment="Left" Margin="227,182,0,0" VerticalAlignment="Top" Width="75"/>
 

@@ -22,6 +22,26 @@ namespace Bank_Savior
             InitializeComponent();
         }
 
+        public struct prestamo {
+
+            int capital;
+            int duracionPrestamo;
+            int interes;
+
+
+        }
+
+        public void limpiarDatos()
+        {
+            txtCapitalInicial.Text = "";
+            txtTasaInteres.Text = "";
+            txtTiempoAños.Text = "";
+            lblResultadoNumeroCoutas.Content = "Numero de Cuotas: XXX";
+            lblResultadoCoutaMensual.Content = "Couta Mensual: XXX";
+            lblResultadoInteresyTotal.Content = "Interes: XXX Total: XXXX";
+            
+        }
+
         private void btnMenuPrincipal_Click(object sender, RoutedEventArgs e)
         {
             //Para ocultar la pagina y enlazar con la otra
@@ -31,6 +51,20 @@ namespace Bank_Savior
             GUIMenu VentanaMenu = new GUIMenu();
 
             VentanaMenu.Show();
+        }
+
+        private void btnCalcular_Click(object sender, RoutedEventArgs e)
+        {
+
+            
+
+        }
+
+        private void btnBorrar_Click(object sender, RoutedEventArgs e)
+        {
+
+            limpiarDatos();
+        
         }
     }
 }

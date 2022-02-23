@@ -17,10 +17,10 @@
         <TextBox x:Name="txtTiempoAños" HorizontalAlignment="Left" Margin="250,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtTasaInteres" HorizontalAlignment="Left" Margin="250,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="cmbFrecuenciaCapitalizacion" HorizontalAlignment="Left" Margin="250,264,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lblResultado" Content="En un &quot;X&quot; años tendrá $XXXXXX" HorizontalAlignment="Left" Margin="71,312,0,0" VerticalAlignment="Top" Width="299" Foreground="White" Height="43" FontSize="20"/>
+        <Label x:Name="lblResultado" Content="En un X años tendrá $XXXXXX" HorizontalAlignment="Left" Margin="71,312,0,0" VerticalAlignment="Top" Width="299" Foreground="White" Height="43" FontSize="20"/>
         <Image HorizontalAlignment="Left" Height="218" Margin="460,111,0,0" VerticalAlignment="Top" Width="244" Source="/icompuesto.png"/>
         <Button x:Name="btnCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="96,369,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold"/>
-        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="220,369,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold"/>
+        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="220,369,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold" Click="btnBorrar_Click"/>
 
     </Grid>
 </Window>
