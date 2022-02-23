@@ -26,5 +26,6 @@
         <Image Margin="187,109,89,90" Stretch="Uniform" Source="/login-image.png" Grid.Column="1"/>
         <Image HorizontalAlignment="Left" Height="116" Margin="395,222,0,0" VerticalAlignment="Top" Width="108" Source="/planta.png" Grid.Column="1"/>
         <Image HorizontalAlignment="Left" Height="72" Margin="273,159,0,0" VerticalAlignment="Top" Width="71" Source="/estadisticas.png" Grid.Column="1"/>
+        <Button x:Name="BtnCreadores" Grid.Column="1" Content="Creadores" HorizontalAlignment="Left" Margin="295,357,0,0" VerticalAlignment="Top" Height="26" Width="112" Background="Transparent" BorderBrush="#eee" Opacity="0.9" Foreground="#eee" Grid.ColumnSpan="2" Click="BtnCreadores_Click_1"/>
     </Grid>
 </Window>

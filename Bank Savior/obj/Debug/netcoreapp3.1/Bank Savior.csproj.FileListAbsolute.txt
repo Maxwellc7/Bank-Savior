@@ -49,3 +49,5 @@ C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcorea
 C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_Prestamo.baml
 C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_PuntoEquilibrio.baml
 C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_VarTir.baml
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUICreadores.g.cs
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUICreadores.baml

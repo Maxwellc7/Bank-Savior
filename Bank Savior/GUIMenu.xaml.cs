@@ -71,5 +71,14 @@ namespace Bank_Savior
 
             VentanaLogin.Show();
         }
+
+        private void BtnCreadores_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+
+            GUICreadores VentanaCreadores = new GUICreadores();
+
+            VentanaCreadores.Show();
+        }
     }
 }

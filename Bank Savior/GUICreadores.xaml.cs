@@ -13,20 +13,17 @@ using System.Windows.Shapes;
 namespace Bank_Savior
 {
     /// <summary>
-    /// Lógica de interacción para GUI_PuntoEquilibrio.xaml
+    /// Lógica de interacción para GUICreadores.xaml
     /// </summary>
-    public partial class GUI_PuntoEquilibrio : Window
+    public partial class GUICreadores : Window
     {
-
-   
-        public GUI_PuntoEquilibrio()
+        public GUICreadores()
         {
             InitializeComponent();
         }
 
         private void btnMenuPrincipal_Click(object sender, RoutedEventArgs e)
         {
-
             //Para ocultar la pagina y enlazar con la otra
 
             this.Hide();
@@ -34,14 +31,6 @@ namespace Bank_Savior
             GUIMenu VentanaMenu = new GUIMenu();
 
             VentanaMenu.Show();
-        }
-
-        private void btnCalcular_Click(object sender, RoutedEventArgs e)
-        {
-
-
-
-
         }
     }
 }
