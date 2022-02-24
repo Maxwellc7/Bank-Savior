@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\xavic\\source\\repos\\Proyecto\\Bank Savior\\Bank Savior.csproj",
+      "projectUniqueName": "C:\\Users\\xavic\\Source\\Repos\\BankSavior\\Bank Savior\\Bank Savior.csproj",
       "projectName": "Bank Savior",
-      "projectPath": "C:\\Users\\xavic\\source\\repos\\Proyecto\\Bank Savior\\Bank Savior.csproj",
+      "projectPath": "C:\\Users\\xavic\\Source\\Repos\\BankSavior\\Bank Savior\\Bank Savior.csproj",
       "packagesPath": "C:\\Users\\xavic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\xavic\\source\\repos\\Proyecto\\Bank Savior\\obj\\",
+      "outputPath": "C:\\Users\\xavic\\Source\\Repos\\BankSavior\\Bank Savior\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\xavic\\AppData\\Roaming\\NuGet\\NuGet.Config",

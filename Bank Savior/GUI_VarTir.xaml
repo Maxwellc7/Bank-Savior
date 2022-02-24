@@ -26,7 +26,7 @@
         <Label x:Name="lblaño4" Content="Año 4:" HorizontalAlignment="Left" Margin="227,279,0,0" VerticalAlignment="Top" Width="50" Foreground="White"/>
         <TextBox x:Name="txtaño3" HorizontalAlignment="Left" Margin="299,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" TextChanged="txtaño3_TextChanged"/>
         <TextBox x:Name="txtaño4" HorizontalAlignment="Left" Margin="299,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" TextChanged="txtaño4_TextChanged"/>
-        <ComboBox x:Name="cmbFlujoCaja" HorizontalAlignment="Left" Margin="227,182,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox x:Name="cmbFlujoCaja" HorizontalAlignment="Left" Margin="227,182,0,0" VerticalAlignment="Top" Width="75" SelectionChanged="cmbFlujoCaja_SelectionChanged"/>
         <Label x:Name="lblErrorInversion" Content="" HorizontalAlignment="Left" Margin="375,86,0,0" VerticalAlignment="Top" Width="182" Foreground="#FFEC1111" AutomationProperties.Name="" Visibility="Visible" AutomationProperties.IsRequiredForForm="True" IsEnabled="False" FontSize="11"/>
         <Label x:Name="lblErrorTasa" Content="" HorizontalAlignment="Left" Margin="370,131,0,0" VerticalAlignment="Top" Width="207" Foreground="#FFEC1111" AutomationProperties.Name="" Visibility="Visible" AutomationProperties.IsRequiredForForm="True" IsEnabled="False" Height="47" FontSize="11"/>
         <Label x:Name="lblErrorAnios" Content="" HorizontalAlignment="Left" Margin="181,305,0,0" VerticalAlignment="Top" Width="182" Foreground="#FFEC1111" AutomationProperties.Name="" Visibility="Visible" AutomationProperties.IsRequiredForForm="True" IsEnabled="False" FontSize="11"/>
