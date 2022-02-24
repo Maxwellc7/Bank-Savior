@@ -20,6 +20,20 @@ namespace Bank_Savior
     
     public partial class GUI_VarTir : Window
     {
+        struct VarTir
+        {
+            public double inversion;
+            public double tasaDeInteres;
+            public años FlujoDeCaja;
+            
+        }
+        struct años
+        {
+            public double año1;
+            public double año2;
+            public double año3;
+            public double año4;
+        }
      
         public GUI_VarTir()
         {
@@ -29,9 +43,14 @@ namespace Bank_Savior
             cmbFlujoCaja.Items.Add("2");
             cmbFlujoCaja.Items.Add("3");
             cmbFlujoCaja.Items.Add("4");
-            
-          
-           
+
+            txtaño1.IsEnabled = false;
+            txtaño2.IsEnabled = false;
+            txtaño3.IsEnabled = false;
+            txtaño4.IsEnabled = false;
+
+
+
         }
 
         public void limpiarDatos()
@@ -48,7 +67,11 @@ namespace Bank_Savior
             lblErrorAnios.Content = "";
             lblErrorInversion.Content = "";
             lblErrorTasa.Content = "";
-
+            txtaño1.IsEnabled = false;
+            txtaño2.IsEnabled = false;
+            txtaño3.IsEnabled = false;
+            txtaño4.IsEnabled = false;
+            
         }
 
         private void btnMenuPrincipal_Click(object sender, RoutedEventArgs e)
@@ -190,7 +213,54 @@ namespace Bank_Savior
         {
             try
             {
-                //sacar VAR
+           
+            double inversionInicial = double.Parse(txtInversionInicial.Text);
+            double tasaInteres = double.Parse(txtTasaInteres.Text);
+            int nAños = cmbFlujoCaja.SelectedIndex;
+            validaciones();
+            
+                if (nAños != -1)
+                {
+  
+                    VarTir usuario=new VarTir();
+                 
+                    usuario.inversion = inversionInicial; 
+                    usuario.tasaDeInteres= tasaInteres;
+
+                    switch (nAños)
+                    {
+                        case 0:
+                            usuario.FlujoDeCaja.año1 = double.Parse(txtaño1.Text); ;
+                            usuario.FlujoDeCaja.año2 = 0;
+                            usuario.FlujoDeCaja.año3 = 0;
+                            usuario.FlujoDeCaja.año4 = 0;
+
+                            break;
+                        case 1:
+                            usuario.FlujoDeCaja.año1 = double.Parse(txtaño1.Text); ;
+                            usuario.FlujoDeCaja.año2 = double.Parse(txtaño2.Text);
+                            usuario.FlujoDeCaja.año3 = 0;
+                            usuario.FlujoDeCaja.año4 = 0;
+                            break;
+                        case 2:
+                            usuario.FlujoDeCaja.año1 = double.Parse(txtaño1.Text); ;
+                            usuario.FlujoDeCaja.año2 = double.Parse(txtaño2.Text);
+                            usuario.FlujoDeCaja.año3 = double.Parse(txtaño3.Text);
+                            usuario.FlujoDeCaja.año4 = 0;
+                            break;
+                        case 3:
+                            usuario.FlujoDeCaja.año1 = double.Parse(txtaño1.Text); ;
+                            usuario.FlujoDeCaja.año2 = double.Parse(txtaño2.Text);
+                            usuario.FlujoDeCaja.año3 = double.Parse(txtaño3.Text);
+                            usuario.FlujoDeCaja.año4 = double.Parse(txtaño4.Text);
+                            break;
+
+                    }
+
+                    CalcularVar(usuario);
+                   
+                }
+                
             }
             catch
             {
@@ -198,12 +268,90 @@ namespace Bank_Savior
             }
         }
 
-        
+        private void cmbFlujoCaja_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(cmbFlujoCaja.SelectedIndex != -1)
+            {
+                int nAños=cmbFlujoCaja.SelectedIndex;
+                if (nAños == 0)          // un año
+                {
+                    lblaño1.IsEnabled = true;
+                    lblaño2.IsEnabled= false;
+                    lblIaño3.IsEnabled = false;
+                    lblaño4.IsEnabled = false;
+                    txtaño1.IsEnabled = true;
+                    txtaño2.IsEnabled = false;
+                    txtaño3.IsEnabled=false;
+                    txtaño4.IsEnabled=false;
+                }
+                if (nAños == 1)
+                {
+                    lblaño1.IsEnabled = true;
+                    lblaño2.IsEnabled = true;
+                    lblIaño3.IsEnabled = false;
+                    lblaño4.IsEnabled = false;
+                    txtaño1.IsEnabled = true;
+                    txtaño2.IsEnabled = true;
+                    txtaño3.IsEnabled = false;
+                    txtaño4.IsEnabled = false;
+                }
+                if (nAños == 2)
+                {
+                    lblaño1.IsEnabled = true;
+                    lblaño2.IsEnabled = true;
+                    lblIaño3.IsEnabled = true;
+                    lblaño4.IsEnabled = false;
+                    txtaño1.IsEnabled = true;
+                    txtaño2.IsEnabled = true;
+                    txtaño3.IsEnabled = true;
+                    txtaño4.IsEnabled = false;
+                }
+                if (nAños == 3)
+                {
+                    lblaño1.IsEnabled = true;
+                    lblaño2.IsEnabled = true;
+                    lblIaño3.IsEnabled = true;
+                    lblaño4.IsEnabled = true;
+                    txtaño1.IsEnabled = true;
+                    txtaño2.IsEnabled = true;
+                    txtaño3.IsEnabled = true;
+                    txtaño4.IsEnabled = true;
+                }
+            }
 
-       
+        }
+
+        private void validaciones()
+        {
+            if(cmbFlujoCaja.SelectedIndex == -1)
+            {
+                MessageBox.Show("Error. Seleccione el flujo de caja");
+            }
+            
+        }
+
+         private void CalcularVar(VarTir cliente1)
+        {
+            //Cálculo del VAR
+            double valorFuturo = (1 + (cliente1.tasaDeInteres / 100));
+            double primerAño = (cliente1.FlujoDeCaja.año1 / (valorFuturo));
+            double segundoAño = (cliente1.FlujoDeCaja.año2 / (Math.Pow(valorFuturo,2)));
+            double tercerAño = (cliente1.FlujoDeCaja.año3 / (Math.Pow(valorFuturo, 3)));
+            double cuartoAño = (cliente1.FlujoDeCaja.año4 / (Math.Pow(valorFuturo, 4)));
+
+            double totalVar = primerAño + segundoAño + tercerAño + cuartoAño - cliente1.inversion;
+
+            lblResultado.Content = "VAR: $" + Math.Round(totalVar,2);
+            
+            //Cálculo del TIR
+            
+
+        }
+        
+        }
     }
 
     
             
-}
+
     
