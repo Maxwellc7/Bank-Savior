@@ -13,20 +13,23 @@
         <Label x:Name="lblTasaInteres" Content="Tasa Interes" HorizontalAlignment="Left" Margin="66,131,0,0" VerticalAlignment="Top" Width="100" Foreground="White"/>
         <Label x:Name="lblaño1" Content="Año 1:" HorizontalAlignment="Left" Margin="55,234,0,0" VerticalAlignment="Top" Width="50" Foreground="White"/>
         <Label x:Name="lblaño2" Content="Año 2:" HorizontalAlignment="Left" Margin="55,279,0,0" VerticalAlignment="Top" Width="50" Foreground="White"/>
-        <TextBox x:Name="txtInversionInicial" HorizontalAlignment="Left" Margin="250,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtTasaInteres" HorizontalAlignment="Left" Margin="250,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lblResultado" Content="VAR: $XXX  TIR: XX%" HorizontalAlignment="Left" Margin="115,321,0,0" VerticalAlignment="Top" Width="195" Foreground="White" Height="43" FontSize="20"/>
+        <TextBox x:Name="txtInversionInicial" HorizontalAlignment="Left" Margin="250,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtInversionInicial_TextChanged"/>
+        <TextBox x:Name="txtTasaInteres" HorizontalAlignment="Left" Margin="250,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtTasaInteres_TextChanged"/>
+        <Label x:Name="lblResultado" Content="VAR: $XXX  TIR: XX%" HorizontalAlignment="Left" Margin="115,330,0,0" VerticalAlignment="Top" Width="195" Foreground="White" Height="43" FontSize="20"/>
         <Image HorizontalAlignment="Left" Height="218" Margin="460,111,0,0" VerticalAlignment="Top" Width="244" Source="/icompuesto.png"/>
-        <Button x:Name="btnCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="96,369,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold"/>
-        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="220,369,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold" Click="btnBorrar_Click"/>
+        <Button x:Name="btnCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="96,378,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold" Click="btnCalcular_Click"/>
+        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="220,378,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold" Click="btnBorrar_Click"/>
         <Label x:Name="lblFlujoCaja" Content="FLUJO DE CAJA" HorizontalAlignment="Left" Margin="116,180,0,0" VerticalAlignment="Top" Width="100" Foreground="White" FontWeight="Bold"/>
-        <TextBox x:Name="txtaño1" HorizontalAlignment="Left" Margin="127,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
-        <TextBox x:Name="txtaño2" HorizontalAlignment="Left" Margin="127,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
+        <TextBox x:Name="txtaño1" HorizontalAlignment="Left" Margin="127,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" TextChanged="txtaño1_TextChanged"/>
+        <TextBox x:Name="txtaño2" HorizontalAlignment="Left" Margin="127,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" TextChanged="txtaño2_TextChanged"/>
         <Label x:Name="lblIaño3" Content="Año 3:" HorizontalAlignment="Left" Margin="227,234,0,0" VerticalAlignment="Top" Width="50" Foreground="White"/>
         <Label x:Name="lblaño4" Content="Año 4:" HorizontalAlignment="Left" Margin="227,279,0,0" VerticalAlignment="Top" Width="50" Foreground="White"/>
-        <TextBox x:Name="txtaño3" HorizontalAlignment="Left" Margin="299,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
-        <TextBox x:Name="txtaño4" HorizontalAlignment="Left" Margin="299,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
+        <TextBox x:Name="txtaño3" HorizontalAlignment="Left" Margin="299,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" TextChanged="txtaño3_TextChanged"/>
+        <TextBox x:Name="txtaño4" HorizontalAlignment="Left" Margin="299,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" TextChanged="txtaño4_TextChanged"/>
         <ComboBox x:Name="cmbFlujoCaja" HorizontalAlignment="Left" Margin="227,182,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="lblErrorInversion" Content="" HorizontalAlignment="Left" Margin="375,86,0,0" VerticalAlignment="Top" Width="182" Foreground="#FFEC1111" AutomationProperties.Name="" Visibility="Visible" AutomationProperties.IsRequiredForForm="True" IsEnabled="False" FontSize="11"/>
+        <Label x:Name="lblErrorTasa" Content="" HorizontalAlignment="Left" Margin="370,131,0,0" VerticalAlignment="Top" Width="207" Foreground="#FFEC1111" AutomationProperties.Name="" Visibility="Visible" AutomationProperties.IsRequiredForForm="True" IsEnabled="False" Height="47" FontSize="11"/>
+        <Label x:Name="lblErrorAnios" Content="" HorizontalAlignment="Left" Margin="181,305,0,0" VerticalAlignment="Top" Width="182" Foreground="#FFEC1111" AutomationProperties.Name="" Visibility="Visible" AutomationProperties.IsRequiredForForm="True" IsEnabled="False" FontSize="11"/>
 
     </Grid>
 </Window>
