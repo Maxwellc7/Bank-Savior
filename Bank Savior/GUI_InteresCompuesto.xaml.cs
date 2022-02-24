@@ -18,6 +18,15 @@ namespace Bank_Savior
     /// </summary>
     public partial class GUI_InteresCompuesto : Window
     {
+        struct InteresCompuesto
+        {
+            public double capital;
+            public double años;
+            public double tasa;
+            public int frecuencia;
+
+
+        }
         public GUI_InteresCompuesto()
         {
             InitializeComponent();
@@ -157,6 +166,71 @@ namespace Bank_Savior
 
             }
         }
+
+        private void btnCalcular_Click(object sender, RoutedEventArgs e)
+        {
+            if (cmbFrecuenciaCapitalizacion.SelectedIndex == -1)
+            {
+                MessageBox.Show("Error. Seleccione la frecuencia de capitalización");
+            }
+            else
+            {
+                try
+                {
+                    double capitalInicial = double.Parse(txtCapitalInicial.Text);
+                    int tiempo = int.Parse(txtTiempoAños.Text);
+                    double tasaInteres = double.Parse(txtTasaInteres.Text);
+                    int frecuencia = cmbFrecuenciaCapitalizacion.SelectedIndex;
+
+
+                    if (frecuencia != -1)
+                    {
+                        InteresCompuesto cliente = new InteresCompuesto();
+                        cliente.capital = capitalInicial;
+                        cliente.tasa = tasaInteres;
+                        cliente.años = tiempo;
+                        cliente.tasa = tasaInteres;
+
+                        switch (frecuencia)
+                        {
+                            case 0:
+                                calcularInteres(cliente, 1);
+                                break;
+                            case 1:
+                                calcularInteres(cliente, 2);
+                                break;
+                            case 2:
+                                calcularInteres(cliente, 4);
+                                break;
+                            case 3:
+                                calcularInteres(cliente, 12);
+                                break;
+                            case 4:
+                                calcularInteres(cliente, 365);
+                                break;
+
+                        }
+
+                    }
+
+                }
+                catch
+                {
+                    MessageBox.Show("Error. Verifique los datos");
+
+                }
+            }
+        }
+
+        private void calcularInteres(InteresCompuesto cliente, int frecuencia)
+        {
+            double factor = (1 + (((cliente.tasa) / 100) / frecuencia));
+            double capitalF = (cliente.capital) * Math.Pow(factor, (cliente.años * frecuencia));
+
+            lblResultado.Content = "En " + cliente.años + " años tendrá $ " + Math.Round(capitalF,2);
+        }
+
     }
+        
 }
 
