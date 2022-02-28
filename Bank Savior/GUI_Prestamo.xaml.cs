@@ -33,13 +33,17 @@ namespace Bank_Savior
 
         public void limpiarDatos()
         {
-            txtCapitalInicial.Text = "";
-            txtTasaInteres.Text = "";
+            txtCapitalPrestamos.Text = "";
+            txtInteres.Text = "";
             txtTiempoAños.Text = "";
             lblResultadoNumeroCoutas.Content = "Numero de Cuotas: XXX";
             lblResultadoCoutaMensual.Content = "Couta Mensual: XXX";
             lblResultadoInteresyTotal.Content = "Interes: XXX Total: XXXX";
-            
+            lblErrorCapitalP.Content = "";
+            lblErrorInteres.Content = "";
+            lblErrorDuracion.Content = "";
+
+
         }
 
         private void btnMenuPrincipal_Click(object sender, RoutedEventArgs e)
@@ -65,6 +69,90 @@ namespace Bank_Savior
 
             limpiarDatos();
         
+        }
+
+        private void txtCapitalInicial_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if(txtCapitalPrestamos.Text.Trim() == string.Empty)
+            {
+                lblErrorCapitalP.Content = "Campo obligatorio";
+            }
+            else
+            {
+                if (double.TryParse(txtCapitalPrestamos.Text, out double capital))
+                {
+                    if (capital < 0)
+                    {
+                        lblErrorCapitalP.Content = "Número no válido";
+                    }
+                    else
+                    {
+                        lblErrorCapitalP.Content = "";
+                    }
+
+                }
+                else
+                {
+                    lblErrorCapitalP.Content = "Número no válido";
+                }
+
+            }
+        }
+
+        private void txtTiempoAños_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtTiempoAños.Text.Trim() == string.Empty)
+            {
+                lblErrorDuracion.Content = "Campo obligatorio";
+            }
+            else
+            {
+                if (int.TryParse(txtTiempoAños.Text, out int tiempo))
+                {
+                    if (tiempo < 0)
+                    {
+                        lblErrorDuracion.Content = "Número no válido";
+                    }
+                    else
+                    {
+                        lblErrorDuracion.Content = "";
+                    }
+
+                }
+                else
+                {
+                    lblErrorDuracion.Content = "Número no válido";
+                }
+
+            }
+        }
+
+        private void txtInteres_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtInteres.Text.Trim() == string.Empty)
+            {
+                lblErrorInteres.Content = "Campo obligatorio";
+            }
+            else
+            {
+                if (double.TryParse(txtInteres.Text, out double interes))
+                {
+                    if (interes < 0)
+                    {
+                        lblErrorInteres.Content = "Número no válido";
+                    }
+                    else
+                    {
+                        lblErrorInteres.Content = "";
+                    }
+
+                }
+                else
+                {
+                    lblErrorInteres.Content = "Número no válido";
+                }
+
+            }
         }
     }
 }
