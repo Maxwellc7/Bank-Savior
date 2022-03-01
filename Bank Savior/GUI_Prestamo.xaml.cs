@@ -42,7 +42,7 @@ namespace Bank_Savior
         {
             txtCapitalPrestamos.Text = "";
             txtInteres.Text = "";
-            txtTiempoMeses.Text = "";
+            txtTiempoAños.Text = "";
             lblResultadoNumeroCoutas.Content = "Numero de Cuotas: XXX";
             lblResultadoCoutaMensual.Content = "Couta Mensual: XXX";
             lblResultadoInteresyTotal.Content = "Interes: XXX Total: XXXX";
@@ -105,14 +105,14 @@ namespace Bank_Savior
 
         private void txtTiempoMeses_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (txtTiempoMeses.Text.Trim() == string.Empty)
+            if (txtTiempoAños.Text.Trim() == string.Empty)
             {
                 lblErrorDuracion.Content = "Campo obligatorio";
                 validTxtTiempoMeses = false;
             }
             else
             {
-                if (int.TryParse(txtTiempoMeses.Text, out int tiempo))
+                if (int.TryParse(txtTiempoAños.Text, out int tiempo))
                 {
                     if (tiempo < 0)
                     {
@@ -172,7 +172,7 @@ namespace Bank_Savior
             if (validTxtInteres && validTxtCapitalPrestamos && validTxtTiempoMeses)
             {
                 valoresPrestamo.capital = double.Parse(txtCapitalPrestamos.Text);
-                valoresPrestamo.duracionPrestamo = int.Parse(txtTiempoMeses.Text);
+                valoresPrestamo.duracionPrestamo = int.Parse(txtTiempoAños.Text);
                 valoresPrestamo.interes = double.Parse(txtInteres.Text);
                 valoresPrestamo.valorFinal = ((valoresPrestamo.interes / 100) * valoresPrestamo.capital) / (1 - Math.Pow((1 + (valoresPrestamo.interes / 100)), (valoresPrestamo.duracionPrestamo * -1)));
                 lblResultadoCoutaMensual.Content = "Couta Mensual: " + string.Format("{0:0.##}", (valoresPrestamo.valorFinal / valoresPrestamo.duracionPrestamo));

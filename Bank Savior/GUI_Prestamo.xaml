@@ -13,7 +13,7 @@
         <Label x:Name="lblDuracionPrestamo" Content="Duración del préstamo (años)" HorizontalAlignment="Left" Margin="66,148,0,0" VerticalAlignment="Top" Width="179" Foreground="White"/>
         <Label x:Name="lblInteresAnual" Content="Interés anual" HorizontalAlignment="Left" Margin="66,195,0,0" VerticalAlignment="Top" Width="100" Foreground="White"/>
         <TextBox x:Name="txtCapitalPrestamos" HorizontalAlignment="Left" Margin="272,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtCapitalInicial_TextChanged"/>
-        <TextBox x:Name="txtTiempoMeses" HorizontalAlignment="Left" Margin="272,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtTiempoMeses_TextChanged"/>
+        <TextBox x:Name="txtTiempoAños" HorizontalAlignment="Left" Margin="272,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtTiempoMeses_TextChanged"/>
         <TextBox x:Name="txtInteres" HorizontalAlignment="Left" Margin="272,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtInteres_TextChanged"/>
         <Label x:Name="lblResultadoNumeroCoutas" Content="Numero de Cuotas: XXX&#xD;&#xA; $XXXXXX" HorizontalAlignment="Left" Margin="71,243,0,0" VerticalAlignment="Top" Width="299" Foreground="White" Height="43" FontSize="20"/>
         <Image HorizontalAlignment="Left" Height="218" Margin="498,96,0,0" VerticalAlignment="Top" Width="244" Source="/icompuesto.png"/>
