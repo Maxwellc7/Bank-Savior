@@ -177,43 +177,54 @@ namespace Bank_Savior
             {
                 try
                 {
+
                     double capitalInicial = double.Parse(txtCapitalInicial.Text);
                     int tiempo = int.Parse(txtTiempoAños.Text);
                     double tasaInteres = double.Parse(txtTasaInteres.Text);
                     int frecuencia = cmbFrecuenciaCapitalizacion.SelectedIndex;
 
-
-                    if (frecuencia != -1)
+                    if (capitalInicial < 0 || tiempo < 0 || tasaInteres < 0)
                     {
-                        InteresCompuesto cliente = new InteresCompuesto();
-                        cliente.capital = capitalInicial;
-                        cliente.tasa = tasaInteres;
-                        cliente.años = tiempo;
-                        cliente.tasa = tasaInteres;
+                        MessageBox.Show("Error. Verifique los datos");
+                    }
+                    else
+                    {
 
-                        switch (frecuencia)
+
+
+                        if (frecuencia != -1)
                         {
-                            case 0:
-                                calcularInteres(cliente, 1);
-                                break;
-                            case 1:
-                                calcularInteres(cliente, 2);
-                                break;
-                            case 2:
-                                calcularInteres(cliente, 4);
-                                break;
-                            case 3:
-                                calcularInteres(cliente, 12);
-                                break;
-                            case 4:
-                                calcularInteres(cliente, 365);
-                                break;
+                            InteresCompuesto cliente = new InteresCompuesto();
+                            cliente.capital = capitalInicial;
+                            cliente.tasa = tasaInteres;
+                            cliente.años = tiempo;
+                            cliente.tasa = tasaInteres;
+
+                            switch (frecuencia)
+                            {
+                                case 0:
+                                    calcularInteres(cliente, 1);
+                                    break;
+                                case 1:
+                                    calcularInteres(cliente, 2);
+                                    break;
+                                case 2:
+                                    calcularInteres(cliente, 4);
+                                    break;
+                                case 3:
+                                    calcularInteres(cliente, 12);
+                                    break;
+                                case 4:
+                                    calcularInteres(cliente, 365);
+                                    break;
+
+                            }
 
                         }
 
                     }
-
                 }
+
                 catch
                 {
                     MessageBox.Show("Error. Verifique los datos");
@@ -221,6 +232,7 @@ namespace Bank_Savior
                 }
             }
         }
+        
 
         private void calcularInteres(InteresCompuesto cliente, int frecuencia)
         {
@@ -229,6 +241,8 @@ namespace Bank_Savior
 
             lblResultado.Content = "En " + cliente.años + " años tendrá $ " + Math.Round(capitalF,2);
         }
+
+       
 
     }
         
