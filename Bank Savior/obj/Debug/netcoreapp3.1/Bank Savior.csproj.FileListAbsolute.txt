@@ -117,3 +117,36 @@ C:\Users\xavic\Source\Repos\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank 
 C:\Users\xavic\Source\Repos\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.dll
 C:\Users\xavic\Source\Repos\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.pdb
 C:\Users\xavic\Source\Repos\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.genruntimeconfig.cache
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.exe
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.deps.json
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.runtimeconfig.json
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.runtimeconfig.dev.json
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.dll
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.pdb
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.csproj.AssemblyReference.cache
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUICreadores.g.cs
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUIMenu.g.cs
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_InteresCompuesto.g.cs
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_Prestamo.g.cs
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_PuntoEquilibrio.g.cs
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_VarTir.g.cs
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior_MarkupCompile.cache
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior_MarkupCompile.lref
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUIMenu.baml
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_InteresCompuesto.baml
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_Prestamo.baml
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_PuntoEquilibrio.baml
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_VarTir.baml
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.g.resources
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.AssemblyInfoInputs.cache
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.AssemblyInfo.cs
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.csproj.CoreCompileInputs.cache
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.dll
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.pdb
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.genruntimeconfig.cache
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUICreadores.baml

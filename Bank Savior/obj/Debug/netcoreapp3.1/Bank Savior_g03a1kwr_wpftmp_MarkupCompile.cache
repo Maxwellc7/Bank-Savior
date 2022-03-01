@@ -1,5 +1,5 @@
-﻿Bank Savior
-1.0.0.0
+﻿Bank Savior_g03a1kwr_wpftmp
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\Bank Savior\BankSavior\Bank Savior\App.xaml
 7-270150000
 
-11-1527878085
-192-1533232326
+17368272184
+3841228502644
 GUICreadores.xaml;GUIMenu.xaml;GUI_InteresCompuesto.xaml;GUI_Prestamo.xaml;GUI_PuntoEquilibrio.xaml;GUI_VarTir.xaml;MainWindow.xaml;
 
-False
+True
 

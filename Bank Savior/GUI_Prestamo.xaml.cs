@@ -22,20 +22,27 @@ namespace Bank_Savior
             InitializeComponent();
         }
 
+        public bool validTxtCapitalPrestamos = false;
+        public bool validTxtTiempoMeses = false;
+        public bool validTxtInteres = false;
+        public double valorPrestamoFinal = 0;
+
         public struct prestamo {
 
-            int capital;
-            int duracionPrestamo;
-            int interes;
-
+            public double capital;
+            public int duracionPrestamo;
+            public double interes;
+            public double valorFinal;
 
         }
+
+        public prestamo valoresPrestamo;
 
         public void limpiarDatos()
         {
             txtCapitalPrestamos.Text = "";
             txtInteres.Text = "";
-            txtTiempoAños.Text = "";
+            txtTiempoMeses.Text = "";
             lblResultadoNumeroCoutas.Content = "Numero de Cuotas: XXX";
             lblResultadoCoutaMensual.Content = "Couta Mensual: XXX";
             lblResultadoInteresyTotal.Content = "Interes: XXX Total: XXXX";
@@ -57,13 +64,6 @@ namespace Bank_Savior
             VentanaMenu.Show();
         }
 
-        private void btnCalcular_Click(object sender, RoutedEventArgs e)
-        {
-
-            
-
-        }
-
         private void btnBorrar_Click(object sender, RoutedEventArgs e)
         {
 
@@ -76,6 +76,7 @@ namespace Bank_Savior
             if(txtCapitalPrestamos.Text.Trim() == string.Empty)
             {
                 lblErrorCapitalP.Content = "Campo obligatorio";
+                validTxtCapitalPrestamos = false;
             }
             else
             {
@@ -84,44 +85,51 @@ namespace Bank_Savior
                     if (capital < 0)
                     {
                         lblErrorCapitalP.Content = "Número no válido";
+                        validTxtCapitalPrestamos = false;
                     }
                     else
                     {
                         lblErrorCapitalP.Content = "";
+                        validTxtCapitalPrestamos = true;
                     }
 
                 }
                 else
                 {
                     lblErrorCapitalP.Content = "Número no válido";
+                    validTxtCapitalPrestamos = false;
                 }
 
             }
         }
 
-        private void txtTiempoAños_TextChanged(object sender, TextChangedEventArgs e)
+        private void txtTiempoMeses_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (txtTiempoAños.Text.Trim() == string.Empty)
+            if (txtTiempoMeses.Text.Trim() == string.Empty)
             {
                 lblErrorDuracion.Content = "Campo obligatorio";
+                validTxtTiempoMeses = false;
             }
             else
             {
-                if (int.TryParse(txtTiempoAños.Text, out int tiempo))
+                if (int.TryParse(txtTiempoMeses.Text, out int tiempo))
                 {
                     if (tiempo < 0)
                     {
                         lblErrorDuracion.Content = "Número no válido";
+                        validTxtTiempoMeses = false;
                     }
                     else
                     {
                         lblErrorDuracion.Content = "";
+                        validTxtTiempoMeses = true;
                     }
 
                 }
                 else
                 {
                     lblErrorDuracion.Content = "Número no válido";
+                    validTxtTiempoMeses = false;
                 }
 
             }
@@ -132,6 +140,7 @@ namespace Bank_Savior
             if (txtInteres.Text.Trim() == string.Empty)
             {
                 lblErrorInteres.Content = "Campo obligatorio";
+                validTxtInteres = false;
             }
             else
             {
@@ -140,18 +149,35 @@ namespace Bank_Savior
                     if (interes < 0)
                     {
                         lblErrorInteres.Content = "Número no válido";
+                        validTxtInteres = false;
                     }
                     else
                     {
                         lblErrorInteres.Content = "";
+                        validTxtInteres = true;
                     }
 
                 }
                 else
                 {
                     lblErrorInteres.Content = "Número no válido";
+                    validTxtInteres = false;
                 }
 
+            }
+        }
+
+        private void btnCalcular_Click(object sender, RoutedEventArgs e)
+        {
+            if (validTxtInteres && validTxtCapitalPrestamos && validTxtTiempoMeses)
+            {
+                valoresPrestamo.capital = double.Parse(txtCapitalPrestamos.Text);
+                valoresPrestamo.duracionPrestamo = int.Parse(txtTiempoMeses.Text);
+                valoresPrestamo.interes = double.Parse(txtInteres.Text);
+                valoresPrestamo.valorFinal = ((valoresPrestamo.interes / 100) * valoresPrestamo.capital) / (1 - Math.Pow((1 + (valoresPrestamo.interes / 100)), (valoresPrestamo.duracionPrestamo * -1)));
+                lblResultadoCoutaMensual.Content = "Couta Mensual: " + string.Format("{0:0.##}", (valoresPrestamo.valorFinal / valoresPrestamo.duracionPrestamo));
+                lblResultadoNumeroCoutas.Content = "Numero de Cuotas: " + (valoresPrestamo.duracionPrestamo);
+                lblResultadoInteresyTotal.Content = "Interes: " + string.Format("{0:0.##}", valoresPrestamo.interes) + " Total: " + string.Format("{0:0.##}", valoresPrestamo.valorFinal);
             }
         }
     }
