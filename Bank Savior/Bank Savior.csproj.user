@@ -22,7 +22,7 @@
     <Compile Update="GUI_PuntoEquilibrio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="GUI_VarTir.xaml.cs">
+    <Compile Update="GUI_VanTir.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -42,7 +42,7 @@
     <Page Update="GUI_PuntoEquilibrio.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="GUI_VarTir.xaml">
+    <Page Update="GUI_VanTir.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

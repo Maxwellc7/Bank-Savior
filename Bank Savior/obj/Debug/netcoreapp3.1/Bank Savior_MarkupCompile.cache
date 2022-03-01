@@ -4,33 +4,17 @@
 winexe
 C#
 .cs
-<<<<<<< HEAD
-C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\sa\Bank Savior\obj\Debug\netcoreapp3.1\
-=======
-<<<<<<< HEAD
-C:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\
-=======
-C:\Users\xavic\source\repos\BankS\Bank Savior\obj\Debug\netcoreapp3.1\
->>>>>>> cc5e4f80e1f750be98753ccd8ffd5921c2c3e140
->>>>>>> 80d0bce0e92228dc7895141dfb1979b1e2fdad48
+C:\Users\xavic\Source\Repos\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\
 Bank_Savior
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-<<<<<<< HEAD
-C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\sa\Bank Savior\App.xaml
-=======
-<<<<<<< HEAD
-C:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\App.xaml
-=======
-C:\Users\xavic\source\repos\BankS\Bank Savior\App.xaml
->>>>>>> cc5e4f80e1f750be98753ccd8ffd5921c2c3e140
->>>>>>> 80d0bce0e92228dc7895141dfb1979b1e2fdad48
-7-270150000
+C:\Users\xavic\Source\Repos\BankSavior\Bank Savior\App.xaml
+72069451860
 
-9-2019274268
+9-676699800
 192-1533232326
-GUICreadores.xaml;GUIMenu.xaml;GUI_InteresCompuesto.xaml;GUI_Prestamo.xaml;GUI_PuntoEquilibrio.xaml;GUI_VarTir.xaml;MainWindow.xaml;
+GUICreadores.xaml;GUIMenu.xaml;GUI_InteresCompuesto.xaml;GUI_Prestamo.xaml;GUI_PuntoEquilibrio.xaml;GUI_VanTir.xaml;MainWindow.xaml;
 
 False
 

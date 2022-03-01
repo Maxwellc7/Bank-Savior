@@ -49,9 +49,9 @@ namespace Bank_Savior
 
             this.Hide();
 
-            GUI_VarTir VentanaVarTir = new GUI_VarTir();
+            GUI_VarTir VentanaVanTir = new GUI_VarTir();
 
-            VentanaVarTir.Show();
+            VentanaVanTir.Show();
         }
 
         private void btnPuntoEquilibrio_Click(object sender, RoutedEventArgs e)

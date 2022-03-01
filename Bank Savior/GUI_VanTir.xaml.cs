@@ -21,7 +21,7 @@ namespace Bank_Savior
     
     public partial class GUI_VarTir : Window
     {
-        struct VarTir
+        struct VanTir
         {
             public double inversion;
             public double tasaDeInteres;
@@ -215,7 +215,7 @@ namespace Bank_Savior
                 if (nAños != -1)
                 {
   
-                    VarTir usuario=new VarTir();
+                    VanTir usuario=new VanTir();
                  
                     usuario.inversion = inversionInicial; 
                     usuario.tasaDeInteres= tasaInteres;
@@ -256,7 +256,7 @@ namespace Bank_Savior
 
                         }
 
-                        CalcularVar(usuario);
+                        CalcularVanTir(usuario);
                             
                         
 
@@ -334,9 +334,9 @@ namespace Bank_Savior
             
         }
 
-         private void CalcularVar(VarTir cliente1)
+         private void CalcularVanTir(VanTir cliente1)
         {
-            //Cálculo del VAR
+            //Cálculo del VAN
             double valorFuturo = (1 + (cliente1.tasaDeInteres / 100));
             double primerAño = (cliente1.FlujoDeCaja.año1 / (valorFuturo));
             double segundoAño = (cliente1.FlujoDeCaja.año2 / (Math.Pow(valorFuturo,2)));
@@ -345,7 +345,7 @@ namespace Bank_Savior
 
             double totalVar = primerAño + segundoAño + tercerAño + cuartoAño - cliente1.inversion;
 
-            lblResultado.Content = "VAR: $ " + Math.Round(totalVar,2);
+            lblResultado.Content = "VAN: $ " + Math.Round(totalVar,2);
 
 
             //Cálculo del TIR

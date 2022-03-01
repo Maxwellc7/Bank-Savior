@@ -185,7 +185,6 @@ C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\sa\Bank Savior\obj\Deb
 C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\sa\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.pdb
 C:\Users\juanf\Desktop\Semestre_1\Programacion_I\Proyecto\sa\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.genruntimeconfig.cache
 =======
-<<<<<<< HEAD
 C:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.exe
 C:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.deps.json
 C:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.runtimeconfig.json
@@ -219,7 +218,6 @@ C:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank S
 C:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.dll
 C:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.pdb
 C:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.genruntimeconfig.cache
-=======
 C:\Users\xavic\source\repos\BankS\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.exe
 C:\Users\xavic\source\repos\BankS\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.deps.json
 C:\Users\xavic\source\repos\BankS\Bank Savior\bin\Debug\netcoreapp3.1\Bank Savior.runtimeconfig.json
@@ -255,3 +253,5 @@ C:\Users\xavic\source\repos\BankS\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savio
 C:\Users\xavic\source\repos\BankS\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savior.genruntimeconfig.cache
 >>>>>>> cc5e4f80e1f750be98753ccd8ffd5921c2c3e140
 >>>>>>> 80d0bce0e92228dc7895141dfb1979b1e2fdad48
+C:\Users\xavic\Source\Repos\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_VanTir.g.cs
+C:\Users\xavic\Source\Repos\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_VanTir.baml
