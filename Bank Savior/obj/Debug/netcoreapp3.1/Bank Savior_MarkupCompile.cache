@@ -4,12 +4,20 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\
+=======
+C:\Users\xavic\source\repos\BankS\Bank Savior\obj\Debug\netcoreapp3.1\
+>>>>>>> cc5e4f80e1f750be98753ccd8ffd5921c2c3e140
 Bank_Savior
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+<<<<<<< HEAD
 C:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\App.xaml
+=======
+C:\Users\xavic\source\repos\BankS\Bank Savior\App.xaml
+>>>>>>> cc5e4f80e1f750be98753ccd8ffd5921c2c3e140
 7-270150000
 
 9-2019274268

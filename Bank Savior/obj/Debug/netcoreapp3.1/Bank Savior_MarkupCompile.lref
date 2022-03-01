@@ -1,4 +1,5 @@
 ﻿
+<<<<<<< HEAD
 FC:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\App.xaml;;
 FC:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\GUICreadores.xaml;;
 FC:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\GUIMenu.xaml;;
@@ -7,4 +8,14 @@ FC:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\GUI_Prestamo.xaml;;
 FC:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\GUI_PuntoEquilibrio.xaml;;
 FC:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\GUI_VarTir.xaml;;
 FC:\Users\juanf\Desktop\asd\BankSavior\Bank Savior\MainWindow.xaml;;
+=======
+FC:\Users\xavic\source\repos\BankS\Bank Savior\App.xaml;;
+FC:\Users\xavic\source\repos\BankS\Bank Savior\GUICreadores.xaml;;
+FC:\Users\xavic\source\repos\BankS\Bank Savior\GUIMenu.xaml;;
+FC:\Users\xavic\source\repos\BankS\Bank Savior\GUI_InteresCompuesto.xaml;;
+FC:\Users\xavic\source\repos\BankS\Bank Savior\GUI_Prestamo.xaml;;
+FC:\Users\xavic\source\repos\BankS\Bank Savior\GUI_PuntoEquilibrio.xaml;;
+FC:\Users\xavic\source\repos\BankS\Bank Savior\GUI_VarTir.xaml;;
+FC:\Users\xavic\source\repos\BankS\Bank Savior\MainWindow.xaml;;
+>>>>>>> cc5e4f80e1f750be98753ccd8ffd5921c2c3e140
 

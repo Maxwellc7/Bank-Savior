@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\juanf\\Desktop\\asd\\BankSavior\\Bank Savior\\Bank Savior.csproj": {}
   },
   "projects": {
@@ -12,13 +13,30 @@
         "projectPath": "C:\\Users\\juanf\\Desktop\\asd\\BankSavior\\Bank Savior\\Bank Savior.csproj",
         "packagesPath": "C:\\Users\\juanf\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\juanf\\Desktop\\asd\\BankSavior\\Bank Savior\\obj\\",
+=======
+    "C:\\Users\\xavic\\source\\repos\\BankS\\Bank Savior\\Bank Savior.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\xavic\\source\\repos\\BankS\\Bank Savior\\Bank Savior.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\xavic\\source\\repos\\BankS\\Bank Savior\\Bank Savior.csproj",
+        "projectName": "Bank Savior",
+        "projectPath": "C:\\Users\\xavic\\source\\repos\\BankS\\Bank Savior\\Bank Savior.csproj",
+        "packagesPath": "C:\\Users\\xavic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\xavic\\source\\repos\\BankS\\Bank Savior\\obj\\",
+>>>>>>> cc5e4f80e1f750be98753ccd8ffd5921c2c3e140
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\juanf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+=======
+          "C:\\Users\\xavic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> cc5e4f80e1f750be98753ccd8ffd5921c2c3e140
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
