@@ -1,8 +1,20 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "+kcSp97D2ZkBkaVCYbwwfFeaDqqezuj8jPtS2ZvalTxlTFiKXKpZkSrughtIMF8gC/FpwDLlBJ3E5AJtda9dfQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\juanf\\Desktop\\Semestre_1\\Programacion_I\\Proyecto\\sa\\Bank Savior\\Bank Savior.csproj",
+=======
+<<<<<<< HEAD
+  "dgSpecHash": "QvAC6BLN+vyrNJ6xm2WCa4PBD4XmpxcJaUuTQ/FmFgi3jyHDqz7KH2VEtWBP+DMo6+XMq89378Dx4X0Ka81T0A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\juanf\\Desktop\\asd\\BankSavior\\Bank Savior\\Bank Savior.csproj",
+=======
+  "dgSpecHash": "Co5u40frOC2g4LG3pxWT1IPAKX09T8xAio0LIeBnAUSw/S+OGPla31Y3CWZNH1YqLsxa6oFoomZU/hDUMv4mbw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\xavic\\source\\repos\\BankS\\Bank Savior\\Bank Savior.csproj",
+>>>>>>> cc5e4f80e1f750be98753ccd8ffd5921c2c3e140
+>>>>>>> 80d0bce0e92228dc7895141dfb1979b1e2fdad48
   "expectedPackageFiles": [],
   "logs": []
 }

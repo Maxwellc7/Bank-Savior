@@ -174,15 +174,8 @@ namespace Bank_Savior
                 {
                     if (double.TryParse(texto, out double anio))
                     {
-                        if (anio > 0)
-                        {
-                            lblErrorAnios.Content = "";
-                        }
-                        else
-                        {
-                            lblErrorAnios.Content = "Años no válidos";
-                        }
-                       
+                        lblErrorAnios.Content = "";
+
                     }
 
                 }
@@ -262,15 +255,10 @@ namespace Bank_Savior
                                 break;
 
                         }
-                        if(usuario.FlujoDeCaja.año1<0|| usuario.FlujoDeCaja.año2 < 0|| usuario.FlujoDeCaja.año3 < 0|| usuario.FlujoDeCaja.año4 < 0)
-                        {
-                            MessageBox.Show("Error. Verifique los datos");
+
+                        CalcularVar(usuario);
                             
-                        }
-                        else
-                        {
-                            CalcularVar(usuario);
-                        }
+                        
 
                         
                     }
@@ -357,16 +345,25 @@ namespace Bank_Savior
 
             double totalVar = primerAño + segundoAño + tercerAño + cuartoAño - cliente1.inversion;
 
-            lblResultado.Content = "VAR: $" + Math.Round(totalVar,2);
+            lblResultado.Content = "VAR: $ " + Math.Round(totalVar,2);
 
-            
+
             //Cálculo del TIR
-            double inversionNegativa = (cliente1.inversion * -1);
-            double [] años = new double [5] {inversionNegativa,cliente1.FlujoDeCaja.año1, cliente1.FlujoDeCaja.año2, cliente1.FlujoDeCaja.año3, cliente1.FlujoDeCaja.año4 };
 
-            double TIR = Financial.IRR(ref años)*100;
+            if (cliente1.FlujoDeCaja.año1<0|| cliente1.FlujoDeCaja.año2 < 0|| cliente1.FlujoDeCaja.año2 < 0|| cliente1.FlujoDeCaja.año3 < 0|| cliente1.FlujoDeCaja.año4 < 0)
+            {
+                lblResultado.Content += "   TIR: -- %";
+            }
+            else
+            {
+                double inversionNegativa = (cliente1.inversion * -1);
+                double[] años = new double[5] { inversionNegativa, cliente1.FlujoDeCaja.año1, cliente1.FlujoDeCaja.año2, cliente1.FlujoDeCaja.año3, cliente1.FlujoDeCaja.año4 };
 
-            lblResultado.Content += "   TIR: " + Math.Round(TIR, 2) + " %";
+                double TIR = Financial.IRR(ref años) * 100;
+
+                lblResultado.Content += "   TIR: " + Math.Round(TIR, 2) + " %";
+            }
+           
             
 
             
