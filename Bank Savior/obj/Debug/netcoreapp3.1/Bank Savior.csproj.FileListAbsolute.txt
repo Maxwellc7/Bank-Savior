@@ -255,3 +255,5 @@ C:\Users\xavic\source\repos\BankS\Bank Savior\obj\Debug\netcoreapp3.1\Bank Savio
 >>>>>>> 80d0bce0e92228dc7895141dfb1979b1e2fdad48
 C:\Users\xavic\Source\Repos\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_VanTir.g.cs
 C:\Users\xavic\Source\Repos\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_VanTir.baml
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_VanTir.g.cs
+C:\Users\Max Carrión\Documents\GitHub\BankSavior\Bank Savior\obj\Debug\netcoreapp3.1\GUI_VanTir.baml

@@ -64,7 +64,7 @@ namespace Bank_Savior
             txtaño3.Text = "";
             txtaño4.Text = "";
             cmbFlujoCaja.Text = "";
-            lblResultado.Content = "VAR: $XXX  TIR: XX%";
+            lblResultado.Content = "VAN: $XXX  TIR: XX%";
             lblErrorAnios.Content = "";
             lblErrorInversion.Content = "";
             lblErrorTasa.Content = "";

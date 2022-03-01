@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\xavic\\Source\\Repos\\BankSavior\\Bank Savior\\Bank Savior.csproj": {}
+    "C:\\Users\\Max Carrión\\Documents\\GitHub\\BankSavior\\Bank Savior\\Bank Savior.csproj": {}
   },
   "projects": {
-    "C:\\Users\\xavic\\Source\\Repos\\BankSavior\\Bank Savior\\Bank Savior.csproj": {
+    "C:\\Users\\Max Carrión\\Documents\\GitHub\\BankSavior\\Bank Savior\\Bank Savior.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xavic\\Source\\Repos\\BankSavior\\Bank Savior\\Bank Savior.csproj",
+        "projectUniqueName": "C:\\Users\\Max Carrión\\Documents\\GitHub\\BankSavior\\Bank Savior\\Bank Savior.csproj",
         "projectName": "Bank Savior",
-        "projectPath": "C:\\Users\\xavic\\Source\\Repos\\BankSavior\\Bank Savior\\Bank Savior.csproj",
-        "packagesPath": "C:\\Users\\xavic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xavic\\Source\\Repos\\BankSavior\\Bank Savior\\obj\\",
+        "projectPath": "C:\\Users\\Max Carrión\\Documents\\GitHub\\BankSavior\\Bank Savior\\Bank Savior.csproj",
+        "packagesPath": "C:\\Users\\Max Carrión\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Max Carrión\\Documents\\GitHub\\BankSavior\\Bank Savior\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\xavic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Max Carrión\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,6 +49,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.22, 3.1.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
