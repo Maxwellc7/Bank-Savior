@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -112,7 +113,7 @@ namespace Bank_Savior
                     {
                         if (inversionInicial < 0)
                         {
-                        lblErrorInversion.Content = "Introducir un número positivo";
+                        lblErrorInversion.Content = "Número no válido";
                         }
                         
                     }
@@ -136,9 +137,9 @@ namespace Bank_Savior
                 {
                     if (double.TryParse(txtTasaInteres.Text, out double tasaInteres))
                     {
-                        if (tasaInteres < 0 || tasaInteres > 100)
+                        if(tasaInteres < 0)
                         {
-                            lblErrorTasa.Content = "Introducir un número de 0 a 100";
+                            lblErrorTasa.Content = "Número no válido";
                         }
                         else
                         {
@@ -157,35 +158,34 @@ namespace Bank_Savior
         }
         private void lblAnios(string texto)
         {
-            if (texto.Trim()==String.Empty)
+            if (texto.Trim() == String.Empty)
             {
                 lblErrorAnios.Content = "Campos obligatorios";
-                
+
             }
             else
             {
                 if (texto.All(Char.IsLetter))
                 {
                     lblErrorAnios.Content = "Años no válidos";
-                    
+
                 }
                 else
                 {
-                    if(int.TryParse(texto,out int anio))
+                    if (double.TryParse(texto, out double anio))
                     {
-                        if(anio > 0)
+                        if (anio > 0)
                         {
                             lblErrorAnios.Content = "";
-
                         }
+                        else
+                        {
+                            lblErrorAnios.Content = "Años no válidos";
+                        }
+                       
                     }
-                    else
-                    {
-                        lblErrorAnios.Content = "Años no válidos";
-                        
-                    }
+
                 }
-                
             }
         }
 
@@ -227,38 +227,54 @@ namespace Bank_Savior
                     usuario.inversion = inversionInicial; 
                     usuario.tasaDeInteres= tasaInteres;
 
-                    switch (nAños)
+                    if (inversionInicial < 0||tasaInteres<0)
                     {
-                        case 0:
-                            usuario.FlujoDeCaja.año1 = double.Parse(txtaño1.Text); ;
-                            usuario.FlujoDeCaja.año2 = 0;
-                            usuario.FlujoDeCaja.año3 = 0;
-                            usuario.FlujoDeCaja.año4 = 0;
-
-                            break;
-                        case 1:
-                            usuario.FlujoDeCaja.año1 = double.Parse(txtaño1.Text); ;
-                            usuario.FlujoDeCaja.año2 = double.Parse(txtaño2.Text);
-                            usuario.FlujoDeCaja.año3 = 0;
-                            usuario.FlujoDeCaja.año4 = 0;
-                            break;
-                        case 2:
-                            usuario.FlujoDeCaja.año1 = double.Parse(txtaño1.Text); ;
-                            usuario.FlujoDeCaja.año2 = double.Parse(txtaño2.Text);
-                            usuario.FlujoDeCaja.año3 = double.Parse(txtaño3.Text);
-                            usuario.FlujoDeCaja.año4 = 0;
-                            break;
-                        case 3:
-                            usuario.FlujoDeCaja.año1 = double.Parse(txtaño1.Text); ;
-                            usuario.FlujoDeCaja.año2 = double.Parse(txtaño2.Text);
-                            usuario.FlujoDeCaja.año3 = double.Parse(txtaño3.Text);
-                            usuario.FlujoDeCaja.año4 = double.Parse(txtaño4.Text);
-                            break;
-
+                        MessageBox.Show("Error. Verifique los datos");
                     }
+                    else
+                    {
+                        switch (nAños)
+                        {
+                            case 0:
+                                usuario.FlujoDeCaja.año1 = double.Parse(txtaño1.Text); ;
+                                usuario.FlujoDeCaja.año2 = 0;
+                                usuario.FlujoDeCaja.año3 = 0;
+                                usuario.FlujoDeCaja.año4 = 0;
 
-                    CalcularVar(usuario);
-                   
+                                break;
+                            case 1:
+                                usuario.FlujoDeCaja.año1 = double.Parse(txtaño1.Text); ;
+                                usuario.FlujoDeCaja.año2 = double.Parse(txtaño2.Text);
+                                usuario.FlujoDeCaja.año3 = 0;
+                                usuario.FlujoDeCaja.año4 = 0;
+                                break;
+                            case 2:
+                                usuario.FlujoDeCaja.año1 = double.Parse(txtaño1.Text); ;
+                                usuario.FlujoDeCaja.año2 = double.Parse(txtaño2.Text);
+                                usuario.FlujoDeCaja.año3 = double.Parse(txtaño3.Text);
+                                usuario.FlujoDeCaja.año4 = 0;
+                                break;
+                            case 3:
+                                usuario.FlujoDeCaja.año1 = double.Parse(txtaño1.Text); ;
+                                usuario.FlujoDeCaja.año2 = double.Parse(txtaño2.Text);
+                                usuario.FlujoDeCaja.año3 = double.Parse(txtaño3.Text);
+                                usuario.FlujoDeCaja.año4 = double.Parse(txtaño4.Text);
+                                break;
+
+                        }
+                        if(usuario.FlujoDeCaja.año1<0|| usuario.FlujoDeCaja.año2 < 0|| usuario.FlujoDeCaja.año3 < 0|| usuario.FlujoDeCaja.año4 < 0)
+                        {
+                            MessageBox.Show("Error. Verifique los datos");
+                            
+                        }
+                        else
+                        {
+                            CalcularVar(usuario);
+                        }
+
+                        
+                    }
+ 
                 }
                 
             }
@@ -342,8 +358,17 @@ namespace Bank_Savior
             double totalVar = primerAño + segundoAño + tercerAño + cuartoAño - cliente1.inversion;
 
             lblResultado.Content = "VAR: $" + Math.Round(totalVar,2);
+
             
             //Cálculo del TIR
+            double inversionNegativa = (cliente1.inversion * -1);
+            double [] años = new double [5] {inversionNegativa,cliente1.FlujoDeCaja.año1, cliente1.FlujoDeCaja.año2, cliente1.FlujoDeCaja.año3, cliente1.FlujoDeCaja.año4 };
+
+            double TIR = Financial.IRR(ref años)*100;
+
+            lblResultado.Content += "   TIR: " + Math.Round(TIR, 2) + " %";
+            
+
             
 
         }
