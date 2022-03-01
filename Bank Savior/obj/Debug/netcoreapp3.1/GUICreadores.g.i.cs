@@ -117,7 +117,7 @@ namespace Bank_Savior {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Bank Savior;V1.0.0.0;component/guicreadores.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Bank Savior;component/guicreadores.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\GUICreadores.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

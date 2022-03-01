@@ -181,7 +181,7 @@ namespace Bank_Savior {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Bank Savior;V1.0.0.0;component/gui_interescompuesto.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Bank Savior;component/gui_interescompuesto.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\GUI_InteresCompuesto.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

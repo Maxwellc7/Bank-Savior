@@ -76,6 +76,10 @@ namespace Bank_Savior
                 valoresPuntoEquilibrio.valorFinal = valoresPuntoEquilibrio.costosFijos / (1 - (valoresPuntoEquilibrio.costosVariables / valoresPuntoEquilibrio.precioDeVenta));
                 lblResultado.Content = "EL PEQ ES IGUAL A "+ string.Format("{0:0.##}", valoresPuntoEquilibrio.valorFinal);
             }
+            else
+            {
+                MessageBox.Show("Error. Verifique los datos");
+            }
 
         }
 

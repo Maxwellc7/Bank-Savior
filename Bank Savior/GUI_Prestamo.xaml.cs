@@ -26,13 +26,15 @@ namespace Bank_Savior
         public bool validTxtTiempoMeses = false;
         public bool validTxtInteres = false;
         public double valorPrestamoFinal = 0;
-
+        public double interesTotal = 0;
         public struct prestamo {
 
             public double capital;
             public int duracionPrestamo;
             public double interes;
             public double valorFinal;
+            public double interesMensual;
+            public double cuotas;
 
         }
 
@@ -174,50 +176,20 @@ namespace Bank_Savior
                 valoresPrestamo.capital = double.Parse(txtCapitalPrestamos.Text);
                 valoresPrestamo.duracionPrestamo = int.Parse(txtTiempoAños.Text);
                 valoresPrestamo.interes = double.Parse(txtInteres.Text);
-                valoresPrestamo.valorFinal = ((valoresPrestamo.interes / 100) * valoresPrestamo.capital) / (1 - Math.Pow((1 + (valoresPrestamo.interes / 100)), (valoresPrestamo.duracionPrestamo * -1)));
-                lblResultadoCoutaMensual.Content = "Couta Mensual: " + string.Format("{0:0.##}", (valoresPrestamo.valorFinal / valoresPrestamo.duracionPrestamo));
+
+                valoresPrestamo.interesMensual = Math.Pow((1+(valoresPrestamo.interes/100)), 0.083333333)-1;
+                valoresPrestamo.cuotas = ((valoresPrestamo.interesMensual)*valoresPrestamo.capital)/(1- Math.Pow((1+ (valoresPrestamo.interesMensual)), (valoresPrestamo.duracionPrestamo*-1)));
+                valoresPrestamo.valorFinal = valoresPrestamo.cuotas * valoresPrestamo.duracionPrestamo;
+
+                lblResultadoCoutaMensual.Content = "Couta Mensual: " + string.Format("{0:0.##}", (valoresPrestamo.cuotas));
                 lblResultadoNumeroCoutas.Content = "Numero de Cuotas: " + (valoresPrestamo.duracionPrestamo);
-                lblResultadoInteresyTotal.Content = "Interes: " + string.Format("{0:0.##}", valoresPrestamo.interes) + " Total: " + string.Format("{0:0.##}", valoresPrestamo.valorFinal);
+                lblResultadoInteresyTotal.Content = "Interes: " + string.Format("{0:0.##}", (valoresPrestamo.valorFinal - valoresPrestamo.capital)) + " Total: " + string.Format("{0:0.##}", (valoresPrestamo.valorFinal));
+            }
+            else
+            {
+                MessageBox.Show("Error. Verifique los datos");
             }
         }
 
-        private void btnCalcular_Click_1(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-
-                prestamo cliente=new prestamo();
-
-                cliente.capital = int.Parse(txtCapitalPrestamos.Text);
-                cliente.duracionPrestamo = (int.Parse(txtTiempoAños.Text)*12);
-                cliente.interes = double.Parse(txtInteres.Text);
-
-                double tasaMensual = (Math.Pow((1 + (cliente.interes/100)), (1 / 12)) - 1);
-
-                double pagoMensual;
-                double interes;
-                double total;
-
-                pagoMensual = (tasaMensual * cliente.capital) / (1 - (Math.Pow((1 + cliente.capital), - cliente.duracionPrestamo)));
-
-                total = (pagoMensual * cliente.duracionPrestamo);
-                interes = cliente.capital - total;
-
-                
-
-                lblResultadoNumeroCoutas.Content = "Numero de cuotas: " + (cliente.duracionPrestamo);
-                lblResultadoCoutaMensual.Content = "Cuota mensual: " + Math.Round(pagoMensual,2);
-                lblResultadoInteresyTotal.Content = "Interes: " + Math.Round(interes, 2) + " Total: "+Math.Round(total,2);
-
-
-
-
-
-            }
-            catch
-            {
-
-            }
-        }
     }
 }
