@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KK+QglC5mMk8bbUCUm/bKoE00vMStCpEfB6C1y3Tv+i/89EcNT/JZSOCsEGbByj/6zSXLG7ghsdTHnCa0gfCBg==",
+  "dgSpecHash": "Co5u40frOC2g4LG3pxWT1IPAKX09T8xAio0LIeBnAUSw/S+OGPla31Y3CWZNH1YqLsxa6oFoomZU/hDUMv4mbw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Max Carrión\\Documents\\GitHub\\BankSavior\\Bank Savior\\Bank Savior.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Max Carrión\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512",
-    "C:\\Users\\Max Carrión\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\Max Carrión\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\Max Carrión\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\xavic\\source\\repos\\BankS\\Bank Savior\\Bank Savior.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
