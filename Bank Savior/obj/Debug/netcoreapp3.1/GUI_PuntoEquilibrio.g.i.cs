@@ -165,7 +165,7 @@ namespace Bank_Savior {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Bank Savior;component/gui_puntoequilibrio.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Bank Savior;V1.0.0.0;component/gui_puntoequilibrio.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\GUI_PuntoEquilibrio.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
