@@ -177,13 +177,13 @@ namespace Bank_Savior
                 valoresPrestamo.duracionPrestamo = int.Parse(txtTiempoAños.Text);
                 valoresPrestamo.interes = double.Parse(txtInteres.Text);
 
-                valoresPrestamo.interesMensual = Math.Pow((1+(valoresPrestamo.interes/100)), 0.083333333)-1;
+                valoresPrestamo.interesMensual = (valoresPrestamo.interes/100/12);
                 valoresPrestamo.cuotas = ((valoresPrestamo.interesMensual)*valoresPrestamo.capital)/(1- Math.Pow((1+ (valoresPrestamo.interesMensual)), (valoresPrestamo.duracionPrestamo*-1)));
                 valoresPrestamo.valorFinal = valoresPrestamo.cuotas * valoresPrestamo.duracionPrestamo;
 
-                lblResultadoCoutaMensual.Content = "Couta Mensual: " + string.Format("{0:0.##}", (valoresPrestamo.cuotas));
+                lblResultadoCoutaMensual.Content = "Couta Mensual: " + Math.Round(valoresPrestamo.cuotas,2);
                 lblResultadoNumeroCoutas.Content = "Numero de Cuotas: " + (valoresPrestamo.duracionPrestamo);
-                lblResultadoInteresyTotal.Content = "Interes: " + string.Format("{0:0.##}", (valoresPrestamo.valorFinal - valoresPrestamo.capital)) + " Total: " + string.Format("{0:0.##}", (valoresPrestamo.valorFinal));
+                lblResultadoInteresyTotal.Content = "Interes: " + Math.Round((valoresPrestamo.valorFinal - valoresPrestamo.capital),2) + " Total: " + Math.Round (valoresPrestamo.valorFinal,2);
             }
             else
             {

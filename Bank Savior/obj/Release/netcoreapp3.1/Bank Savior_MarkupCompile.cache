@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\xavic\source\repos\BankS\Bank Savior\obj\Release\netcoreapp3.1\
+C:\Users\xavic\source\repos\BankSavior\Bank Savior\obj\Release\netcoreapp3.1\
 Bank_Savior
 none
 false
 TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\xavic\source\repos\BankS\Bank Savior\App.xaml
-7-270150000
+C:\Users\xavic\source\repos\BankSavior\Bank Savior\App.xaml
+72069451860
 
-9-2019274268
+9-676699800
 192-1533232326
-GUICreadores.xaml;GUIMenu.xaml;GUI_InteresCompuesto.xaml;GUI_Prestamo.xaml;GUI_PuntoEquilibrio.xaml;GUI_VarTir.xaml;MainWindow.xaml;
+GUICreadores.xaml;GUIMenu.xaml;GUI_InteresCompuesto.xaml;GUI_Prestamo.xaml;GUI_PuntoEquilibrio.xaml;GUI_VanTir.xaml;MainWindow.xaml;
 
 True
 
