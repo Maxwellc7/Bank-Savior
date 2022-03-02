@@ -11,7 +11,7 @@
         <Label x:Name="lblPuntoEquilibrio" Content="Punto de Equilibrio&#xD;&#xA;" HorizontalAlignment="Left" Margin="66,14,0,0" VerticalAlignment="Top" Foreground="#FFF85C42" FontFamily="Shrikhand" FontSize="40" Height="58" Width="425"/>
         <Label x:Name="lblCostosFijos" Content="Costos Fijos Totales" HorizontalAlignment="Left" Margin="66,125,0,0" VerticalAlignment="Top" Width="140" Foreground="White"/>
         <Label x:Name="lblCostoVariable" Content="Costos Variables Totales" HorizontalAlignment="Left" Margin="66,170,0,0" VerticalAlignment="Top" Width="154" Foreground="White"/>
-        <Label x:Name="lblPrecioVenta" Content="Precio de Venta Total" HorizontalAlignment="Left" Margin="66,217,0,0" VerticalAlignment="Top" Width="140" Foreground="White" Height="30"/>
+        <Label x:Name="lblPrecioVenta" Content="Ventas Totales" HorizontalAlignment="Left" Margin="66,217,0,0" VerticalAlignment="Top" Width="140" Foreground="White" Height="30"/>
         <TextBox x:Name="txtCostosFijos" HorizontalAlignment="Left" Margin="250,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtCostosFijos_TextChanged"/>
         <TextBox x:Name="txtCostosVariables" HorizontalAlignment="Left" Margin="250,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtCostosVariables_TextChanged"/>
         <TextBox x:Name="txtPrecioVenta" HorizontalAlignment="Left" Margin="250,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtPrecioVenta_TextChanged"/>
