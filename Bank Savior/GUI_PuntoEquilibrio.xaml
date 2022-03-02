@@ -18,10 +18,10 @@
         <Label x:Name="lblResultado" Content="EL PEQ ES IGUAL A XXXXXX" HorizontalAlignment="Left" Margin="66,275,0,0" VerticalAlignment="Top" Width="299" Foreground="White" Height="43" FontSize="20"/>
         <Button x:Name="btnCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="103,338,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold" Click="btnCalcular_Click"/>
         <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="227,338,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="15" FontWeight="Bold" Click="btnBorrar_Click"/>
-        <Image HorizontalAlignment="Left" Height="218" Margin="460,111,0,0" VerticalAlignment="Top" Width="244" Source="/icompuesto.png"/>
-        <Label x:Name="lblCostosFijosWarning" Content="" HorizontalAlignment="Left" Margin="400,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.877,0.489" Foreground="Red"/>
-        <Label x:Name="lblCostosVariablesWarning" Content="" HorizontalAlignment="Left" Margin="400,173,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.877,0.489" Foreground="Red"/>
-        <Label x:Name="lblCostosPrecioVentaWarning" Content="" HorizontalAlignment="Left" Margin="400,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.877,0.489" Foreground="Red"/>
+        <Image HorizontalAlignment="Left" Height="218" Margin="482,106,0,0" VerticalAlignment="Top" Width="244" Source="/icompuesto.png"/>
+        <Label x:Name="lblCostosFijosWarning" Content="" HorizontalAlignment="Left" Margin="376,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.877,0.489" Foreground="Red" Width="124"/>
+        <Label x:Name="lblCostosVariablesWarning" Content="" HorizontalAlignment="Left" Margin="376,170,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.877,0.489" Foreground="Red" Width="106"/>
+        <Label x:Name="lblCostosPrecioVentaWarning" Content="" HorizontalAlignment="Left" Margin="376,217,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.877,0.489" Foreground="Red" Width="124"/>
 
     </Grid>
 </Window>

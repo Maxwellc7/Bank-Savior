@@ -48,6 +48,11 @@ namespace Bank_Savior
 
             lblResultado.Content = "EL PEQ ES IGUAL A XXXXXX";
 
+            lblCostosFijosWarning.Content = "";
+            lblCostosPrecioVentaWarning.Content = "";
+            lblCostosVariablesWarning.Content = "";
+
+
 
         }
 
